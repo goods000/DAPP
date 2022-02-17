@@ -1,0 +1,52 @@
+.noticeBox {
+	padding: 15upx 30upx;
+	position: fixed;
+	z-index: 5;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 180upx;
+
+	&-wrapper {
+		@include flexBetween;
+		position: relative;
+		width: 690upx;
+		height: 48upx;
+		background-image: url(@/static/index/notice/icon-message-bg.png);
+		background-size: 100% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	&-swiper {
+		height: 40upx;
+		flex: 1;
+		text-align: center;
+
+		&__item {
+			@include flexCenter;
+			
+			&-message{
+				text-align: center;
+				width: 100%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			
+			&-label {
+				color: #ffffff;
+				font-size: 24upx;
+				font-weight: 300;
+				font-family: 'PingFangSC';
+			}
+			
+			&-data {
+				color: #ffba14;
+				font-size: 24upx;
+				font-weight: bold;
+				font-family: 'PingFangSC';
+				margin-left: 15upx;
+			}
+		}
+	}
+}

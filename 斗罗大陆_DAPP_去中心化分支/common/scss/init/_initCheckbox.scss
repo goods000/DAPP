@@ -1,0 +1,28 @@
+.initCheckBox {
+	@include flexLeft;
+	flex-wrap: wrap;
+	
+	&-item {
+		@include flexLeft;
+		width: 50%;
+		margin-bottom: 30upx;
+
+		&__choose {
+			width: 40upx;
+			height: 32upx;
+			background-image: url(@/static/public/icon-checked.png);
+			background-position: center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			
+			&--active{
+				background-image: url(@/static/public/icon-checked-active.png);
+			}
+		}
+
+		&__label {
+			color: #54330a;
+			font-size: 28upx;
+		}
+	}
+}

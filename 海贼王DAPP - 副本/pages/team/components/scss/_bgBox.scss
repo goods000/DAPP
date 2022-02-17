@@ -1,0 +1,6 @@
+.bgBox {
+	&-wrapper {
+		@include fullImage;
+		width: 100%;
+	}
+}

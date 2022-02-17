@@ -1,0 +1,101 @@
+.containerBox {
+	&-wrapper {
+		height: calc(100vh - 400upx);
+		padding: 30upx;
+		padding-bottom: 190upx;
+	}
+
+	&-plane {
+		width: 690upx;
+		height: 756upx;
+		background-image: url(@/static/public/icon-paper-bg.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding: 90upx 60upx;
+	}
+
+	&-title {
+		margin-bottom: 30upx;
+	}
+
+	&-listBox {
+		margin-bottom: 30upx;
+	}
+
+	&-buttonBox {
+		@include flexRight;
+	}
+}
+
+ 
+.dataBox {
+	&-row{
+		@include flexLeft;
+		margin-bottom: 15upx;
+		
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	
+	&-list {
+		@include flexLeft;
+		align-items: stretch;
+		flex: 1;
+		color: #54330a;
+		font-size: 28upx;
+		
+		text{
+			@include flexLeft;
+			height: 100%;
+			min-height: 52upx;
+		}
+	}
+}
+
+.initTitle{
+	margin: 45upx 0;
+}
+
+.sprite {
+	background-image: url(@/static/ranking/spritesheet.png);
+	background-repeat: no-repeat;
+	background-size: 186upx 186upx;
+
+	&.sprite-icon-label-1 {
+		@include stitches-sprite(-5upx, -5upx, 52upx, 52upx);
+	}
+
+	&.sprite-icon-label-2 {
+		@include stitches-sprite(-67upx, -5upx, 52upx, 52upx);
+	}
+
+	&.sprite-icon-label-3 {
+		@include stitches-sprite(-129upx, -5upx, 52upx, 52upx);
+	}
+
+	&.sprite-icon-label-4 {
+		@include stitches-sprite(-5upx, -67upx, 52upx, 52upx);
+	}
+
+	&.sprite-icon-label-5 {
+		@include stitches-sprite(-67upx, -67upx, 52upx, 52upx);
+	}
+
+	&.sprite-icon-label-6 {
+		@include stitches-sprite(-129upx, -67upx, 52upx, 52upx);
+	}
+
+	&.sprite-icon-label-7 {
+		@include stitches-sprite(-5upx, -129upx, 52upx, 52upx);
+	}
+
+	&.sprite-icon-label-8 {
+		@include stitches-sprite(-67upx, -129upx, 52upx, 52upx);
+	}
+
+	&.sprite-icon-label-9 {
+		@include stitches-sprite(-129upx, -129upx, 52upx, 52upx);
+	}
+}

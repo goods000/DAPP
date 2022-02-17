@@ -1,0 +1,76 @@
+.containerBox {
+	&-wrapper {
+		height: calc(100vh - 400upx);
+		padding: 30upx;
+		padding-bottom: 190upx;
+	}
+
+	&-plane {
+		width: 690upx;
+		height: 756upx;
+		background-image: url(@/static/public/icon-paper-bg.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding: 90upx 45upx;
+	}
+
+	&-title {
+		margin-bottom: 30upx;
+	}
+
+	&-listBox {
+		margin-bottom: 60upx;
+	}
+
+	&-buttonBox {
+		@include flexRight;
+	}
+}
+
+.listBox {
+	&-row {
+		@include flexCenter;
+		align-items: flex-start;
+	}
+
+	&-col {
+		flex: 1;
+
+		&--2 {
+			flex: 2;
+		}
+
+		&--3 {
+			flex: 3;
+		}
+	}
+
+	&-list {
+		@include flexLeft;
+		color: $globalColor-fontStyle;
+		font-family: 'HYQiuShi';
+		font-size: 28upx;
+		margin-bottom: 20upx;
+		letter-spacing: 0;
+
+		text {
+			color: $globalColor-themeStyle;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&-tipsBtn {
+		background-image: url(@/static/public/icon-tips.png);
+		background-position: center center;
+		background-size: 28upx 28upx;
+		background-repeat: no-repeat;
+		display: inline-block;
+		width: 28upx;
+		height: 28upx;
+		margin-left: 8upx;
+	}
+}

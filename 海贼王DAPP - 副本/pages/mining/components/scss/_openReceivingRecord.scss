@@ -1,0 +1,37 @@
+.popupBox{
+	&-contentbg{
+		background-image: url(@/static/composite/icon-box-bg.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		padding: 35upx;
+		margin: 59upx 48upx 75upx;
+	}
+}
+
+.failureRecord{
+	&-height{
+		height: calc(100vh - 760upx );
+	}
+	&-item{
+		@include flexLeftColumn;
+		padding: 10upx 20upx;
+		border-bottom: 1px solid rgba(88,82,70,.5);
+		&:nth-last-child(1){
+			border-bottom: none;
+		}
+		&__box{
+			width: 100%;
+			@include flexBetween;
+		}
+		&__content{
+			font-size: 24upx;
+			font-family: PingFang SC, PingFang SC-Heavy;
+			text-align: left;
+			color: #F0E1D2;
+			margin: 10upx 0;
+			&--active{
+				color: #F8C946;
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.exchangeRecord{
+	&-height{
+		height: calc(100vh - 480upx );
+		// min-height: 80vh;
+		@media screen and (min-height: 800px) {
+		   // min-height: calc(100vh - 820upx );
+		   height: 50vh;
+		}
+	}
+	&-item{
+		@include flexLeftColumn;
+		padding: 10upx 20upx;
+		border-bottom: 1px solid #b09d7e;
+		&__box{
+			width: 100%;
+			@include flexBetween;
+		}
+		&__content{
+			font-size: 24upx;
+			font-family: PingFang SC, PingFang SC-Heavy;
+			font-weight: 800;
+			text-align: left;
+			color: #885a3c;
+			margin: 10upx 0;
+		}
+	}
+}

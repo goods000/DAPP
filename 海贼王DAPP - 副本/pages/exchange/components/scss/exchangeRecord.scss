@@ -1,0 +1,89 @@
+.exchangeRecord{
+	&-height{
+		height: calc(100vh - 660upx );
+		@media screen and (min-height: 800px) {
+		   height: calc(100vh - 760upx );
+		}
+	}
+	&-item{
+		@include flexLeftColumn;
+		padding: 10upx 50upx 20upx 20upx;
+		border-bottom: 1px solid #B09D7E;
+		&__box{
+			width: 100%;
+			@include flexBetween;
+		}
+		&__content{
+			@include flexLeft;
+			font-size: 24upx;
+			font-family: PingFang SC, PingFang SC-Heavy;
+			font-weight: 800;
+			text-align: left;
+			color: #F0E1D2;
+			margin: 10upx 0;
+			&-copy{
+				width: 28upx;
+				height: 28upx;
+				margin-left: 16upx;
+			}
+		}
+	}
+	&-initTabs{
+		&-control {
+			@include flexAround;
+			width: 90%;
+			margin: auto;
+			&__item {
+				background-image: url(@/static/exchange/icon-excahnge.png);
+				background-position: center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				font-size: 28upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: center;
+				color: #9a9a9a;
+				padding: 15upx 36upx;
+				&--active{
+					background-image: url(@/static/exchange/icon-excahnge-active.png);
+					background-position: center;
+					background-size: 100% 100%;
+					background-repeat: no-repeat;
+					color: #94663B;
+				}
+			}
+		}
+		
+		&-records{
+			@include flexAround;
+			width: 100%;
+			margin: auto;
+			&__item {
+				font-size: 31upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: right;
+				color: #816857;
+				border-bottom: 1px solid transparent;
+				padding: 11upx 5upx;
+				&--active{
+					color: #E8D08E;
+					border-bottom: 1px solid #E8D08E;
+				}
+			}
+		}
+		
+		&-content{
+			@include initShadow;
+			border-radius: 15upx;
+			background-color: #FFFFFF;
+		}
+	}
+}
+
+.initListBox{
+	&-wrapper{
+		width: 85%;
+		margin-top: 70upx;
+	}
+}

@@ -1,0 +1,24 @@
+.fixedBtnBox {
+	position: fixed;
+	z-index: 99;
+	top: 220upx;
+	left: 30upx;
+	
+	&-wrapper {
+		@include flexCenterColumn;
+	}
+	
+	&-btn {
+		@include fullImage;
+		width: 140upx;
+		margin-bottom: 8upx;
+		
+		&:last-child{
+			margin-bottom: 0;
+		}
+		
+		&--width{
+			width: 133upx;
+		}
+	}
+}

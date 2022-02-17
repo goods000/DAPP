@@ -1,0 +1,255 @@
+.initHeader {
+	z-index: 8;
+	position: relative;
+	height: $global-header-height;
+	overflow: auto;
+	box-sizing: border-box;
+
+	/* #ifdef APP-PLUS */
+	height: calc(var(--status-bar-height) + #{$global-header-height});
+	padding-top: var(--status-bar-height);
+
+	& + .initHeader {
+		height: $global-header-height;
+		padding-top: 0;
+	}
+	/* #endif */
+
+	&--noPadding {
+		/* #ifdef APP-PLUS */
+		height: $global-header-height;
+		padding-top: 0;
+		/* #endif */
+	}
+	
+	&--noBgColor {
+		background-color: transparent!important;
+	}
+
+	&--fixed {
+		background-color: $globalColor-bgStyle;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 9;
+
+		& + view {
+			padding-top: $global-header-height + $global-header-height !important;
+
+			/* #ifdef APP-PLUS */
+			padding-top: calc(var(--status-bar-height) + #{$global-header-height} + #{$global-header-height}) !important;
+			/* #endif */
+		}
+	}
+
+	&--absolute {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 997;
+	}
+	
+	&--sticky{
+		@include initTransition(0.4);
+		padding-top: var(--status-bar-height);
+		position: sticky;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	
+	&--main{
+		height: calc(var(--status-bar-height) + 120upx);
+		padding-top: var(--status-bar-height);
+	}
+
+	&--bgStyle {
+		background-color: #FFFFFF;
+	}
+
+	&--line {
+		// border-bottom: 1upx solid #cccccc;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+			height: 1px;
+			background-color: #2d343d;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0;
+		}
+	}
+
+	&--white {
+		color: #ffffff;
+		.initHeader-back {
+			background-image: url(@/static/public/icon-back-white.png);
+		}
+	}
+
+	&-wrapper {
+		@include flexCenter;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		font-size: 0;
+	}
+
+	&-left {
+		@include flexLeft;
+		position: absolute;
+		left: 30upx;
+		bottom: 0;
+		height: 100%;
+		
+		&--title{
+			@include flexCenter;
+			font-size: 52upx;
+			font-weight: bold;
+		}
+		
+		&--text {
+			@include flexCenter;
+			font-size: 36upx;
+			font-weight: 300;
+			position: absolute;
+			left: 45upx;
+			bottom: 0;
+			height: $global-header-height;
+			padding: 0 30upx;
+		}
+		
+		&--textStyle{
+			color: $globalColor-themeStyle;
+		}
+		
+	}
+
+	&-right {
+		@include flexRight;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+
+		&--text {
+			@include flexCenter;
+			font-size: 32upx;
+			font-weight: 300;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			height: $global-header-height;
+			padding: 0 30upx;
+			text-decoration: underline;
+		}
+		
+		&--textStyle{
+			color: $globalColor-themeStyle;
+		}
+		
+		&--rightBg{
+			background: url(../../static/public/icon-btnBg.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			width: 200upx;
+			height: 61upx;
+			margin: 14upx 30upx 14upx 0;
+			@include flexCenter;
+		}	
+		
+		&__iamge{
+			width: 30upx;
+			height: 32upx;
+		}
+		
+		&__text{
+			color: $globalColor-themeSubStyle;
+			width: 60upx;
+			height: 42upx;
+			opacity: 1;
+			font-size: 30upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			margin-left: 6upx;
+		}
+	}
+
+	//返回
+	&-back {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: $global-header-height;
+		height: $global-header-height;
+		background-size: 20upx 34upx;
+		background-repeat: no-repeat;
+		background-position: 30upx center;
+		z-index: 9;
+	}
+
+	//取消
+	&-close {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: $global-header-height;
+		height: $global-header-height;
+		background-size: 40upx 40upx;
+		background-repeat: no-repeat;
+		background-position: 30upx center;
+		z-index: 9;
+	}
+
+	&-title {
+		@include flexCenter;
+		font-weight: bold;
+		font-size: 32upx;
+		color: $globalColor-fontStyle;
+
+		&--left {
+			justify-content: flex-start;
+			width: 100%;
+			padding-left: $global-header-height;
+		}
+
+		&--noPadding {
+			padding-left: 30upx;
+		}
+	}
+
+	&-imageTitle {
+		@include fullImage;
+		width: 48upx;
+	}
+	
+	//记录
+	&-record {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: $global-header-height;
+		height: $global-header-height;
+		background-size: 40upx 40upx;
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: 9;
+		font-size: 32upx;
+	}
+	
+	//菜单
+	&-menu {
+		width: $initStatusBarHeight;
+		height: $initStatusBarHeight;
+		background-size: 28upx 26upx;
+		background-repeat: no-repeat;
+		background-position: 0 center;
+		z-index: 9;
+		background-image: url(@/static/public/icon-menu.png);
+	}
+}

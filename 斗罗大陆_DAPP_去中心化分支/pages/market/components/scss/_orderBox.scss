@@ -1,0 +1,71 @@
+.orderBox {
+	&-wrapper {
+		height: calc(100vh - 400upx - 160upx);
+		padding: 0 30upx;
+	}
+
+	&-plane {
+		@include flexLeft;
+		flex-wrap: wrap;
+		padding: 30upx 0;
+	}
+
+	&-item {
+		@include flexBetween;
+		width: 100%;
+		height: 152upx;
+		padding: 0 45upx;
+		background-image: url(@/static/market/icon-order-bg.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		margin-bottom: 30upx;
+		
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		&__left {
+			flex: 1;
+		}
+
+		&__type {
+			font-size: 32upx;
+			color: #ffd88d;
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 30upx 30upx;
+			padding-left: 36upx;
+			min-height: 30upx;
+			margin-bottom: 15upx;
+			
+			@for $i from 1 through 5 {
+				&--style#{$i} {
+					background-image: url(@/static/market/icon-level-#{$i}.png);
+				}
+			}
+		}
+		
+		&__info{
+			font-size: 28upx;
+			color: #ffd88d;
+			padding-left: 30upx;
+		}
+
+		&__price {
+			font-family: 'DINPro';
+			color: #e9ba51;
+			font-size: 42upx;
+			font-weight: bold;
+			text-shadow: -3upx -3upx 0 #702f00, 3upx -3upx 0 #702f00, -3upx 3upx 0 #702f00, 3upx 3upx 0 #702f00, 0px 4upx 4upx #702f00;
+			
+			text{
+				font-size: 26upx;
+			}
+		}
+	}
+}
+
+.initTitle {
+	margin: 45upx 0;
+}

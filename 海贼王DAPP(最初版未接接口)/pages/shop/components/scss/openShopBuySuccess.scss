@@ -1,0 +1,46 @@
+.popupBox{
+	background-image: url(@/static/shop/icon-shop-img.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	&-wrapperbg{
+		background-image: url(@/static/shop/icon-shop-bg.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		padding: 35upx 17.5%;
+		margin: 59upx 48upx 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		right: 0;
+		transform: translate(-50%,-50%);
+		width: 100%;
+		margin: auto;
+	}
+	
+	&-contentBox{
+		&__tips{
+			font-size: 36upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #78593c;
+			margin: 70upx auto 39upx;
+		}
+		&__tipsContent{
+			font-size: 30upx;
+			font-family: PingFang SC, PingFang SC-Medium;
+			font-weight: 500;
+			color: #78593c;
+			line-height: 48upx;
+			width: 80%;
+			margin: auto;
+			text-align: center;
+			text{
+				color: #B34AD5;
+			}
+		}
+	}
+	&-btn{
+		margin: 78upx 0upx 0upx;
+	}
+}

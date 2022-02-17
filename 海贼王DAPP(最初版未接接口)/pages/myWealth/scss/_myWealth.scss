@@ -1,0 +1,16 @@
+.myWealth{
+	&-bg{
+		// min-height: 80vh;
+		height: calc(100vh - 280upx );
+		@media screen and (min-height: 800px) {
+		   height: calc(100vh - 580upx );
+		   // min-height: 65vh;
+		}
+	}
+}
+
+.scroll{
+	&-height{
+		height: calc(100vh - 20upx);
+	}
+}

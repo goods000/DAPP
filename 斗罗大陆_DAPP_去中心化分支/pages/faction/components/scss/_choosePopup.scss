@@ -1,0 +1,144 @@
+.choosePopupBox {
+	&-wrapper {
+		@include flexCenterColumn;
+		width: 750upx;
+		height: 100vh;
+		padding: 45upx 0;
+	}
+	
+	&-container{
+		width: 100%;
+		flex: 1;
+		padding: 0 30upx;
+	}
+	
+	&-close{
+		width: 60upx;
+		height: 48upx;
+		background-image: url(@/static/common/popup/icon-popup-close.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center center;
+		position: absolute;
+		right: 30upx;
+		top: 30upx;
+	}
+
+	&-title {
+		@include flexCenter;
+		margin-bottom: 90upx;
+
+		&::before,
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 88upx;
+			height: 12upx;
+			background-image: url(@/static/public/icon-title-decoration2.png);
+			background-repeat: no-repeat;
+			background-size: 88upx 12upx;
+			background-position: center center;
+		}
+
+		&::after {
+			transform: rotateY(180deg);
+		}
+
+		&__label {
+			color: #fda435;
+			font-family: 'HYQiuShi';
+			font-size: 36upx;
+			padding: 0 15upx;
+		}
+	}
+}
+
+.buttonBox{
+	@include flexCenter;
+	
+	&-btn{
+		@include flexCenter;
+		width: 224upx;
+		height: 82upx;
+		color: #54330a;
+		font-size: 36upx;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center center;
+		margin-right: 120upx;
+		
+		&:last-child{
+			margin-right: 0;
+		}
+		
+		&--style1 {
+			background-image: url(@/static/public/icon-button-style3.png);
+		}
+		
+		&--style2 {
+			background-image: url(@/static/public/icon-button-style4.png);
+		}
+	}
+}
+
+
+.subscribeBox {
+	&-wrapper {
+		@include flexCenterColumn;
+		// text-align: center;
+		
+		& > *{
+			width: 100%;
+		}
+	}
+
+	&-title {
+		margin-bottom: 30upx;
+	}
+
+	&-content {
+		color: #fda435;
+		font-size: 28upx;
+	}
+	
+	&-itemBox{
+		margin-bottom: 60upx;
+	}
+}
+
+.itemBox {
+	&-label {
+		text-align: left;
+		color: #fda435;
+		font-size: 28upx;
+		margin-bottom: 15upx;
+	}
+
+	&-body {
+		@include flexLeft;
+		
+		flex-wrap: wrap;
+	}
+	
+	&-item{
+		@include flexCenter;
+		width: 25%;
+		height: 60upx;
+		background-image: url(@/static/faction/icon-item-bg.png);
+		background-size: 120upx 60upx;
+		background-repeat: no-repeat;
+		background-position: center center;
+		color: #ffcf72;
+		font-size: 26upx;
+		margin: 15upx 0;
+		
+		&:nth-child(4n){
+			margin-right: 0;
+		}
+		
+		&--active{
+			background-image: url(@/static/faction/icon-item-bg-active.png);
+			color: #bdbdbd;
+		}
+	}
+}

@@ -1,0 +1,88 @@
+.pages{
+	background-image: url(@/static/share/icon-teamChoose-bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+}
+
+.main{
+	background: rgba(0,0,0,0.80);
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.teamChoose{
+	&-height{
+		height: calc(100vh - 640upx);
+	}
+	&-title{
+		padding: 198upx 0 150upx;
+		width: 264upx;
+		height: 62upx;
+		text-align: center;
+		margin: auto;
+		image{
+			width: 100%;
+		}
+	}
+	&-wrapper{
+		@include flexLeft;
+		flex-wrap: wrap;
+		padding: 0 60upx;
+	}
+	&-item{
+		width: 30.33%;
+		margin: 0 4.47% 28upx 0;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+		&__box{
+			background-image: url(@/static/share/icon-box.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			&--active{
+				background-image: url(@/static/share/icon-box--active.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				color: #D7D5D6;
+				& > view{
+					color: #D7D5D6;
+				}
+			}
+			&-title{
+				font-size: 24upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: center;
+				color: #836e36;
+				padding: 20upx 0;
+				white-space: nowrap;
+				&--active{
+					background-image: url(@/static/share/icon-box--active.png);
+					background-size: 100% 100%;
+					background-repeat: no-repeat;
+					color: #D7D5D6;
+				}
+			}
+		}
+	}
+	&-btn{
+		@include flexBetween;
+		width: 60%;
+		margin: 90upx auto;
+		&__style{
+			background-image: url(@/static/exchange/icon-excahnge-active.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #94663b;
+			width: 35%;
+			padding: 10upx 0;
+		}
+	}
+}

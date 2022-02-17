@@ -1,0 +1,22 @@
+.myWealth{
+	&-bg{
+		min-height: 80vh;
+		@media screen and (min-height: 800px) {
+		   // min-height: calc(100vh - 280upx );
+		   min-height: 65vh;
+		}
+		background-image: url(@/static/myWealth/icon-exchange-bg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		width: 100%;
+		margin: 38upx 0;
+		padding: 107upx 0;
+	}
+}
+
+.scroll{
+	&-height{
+		height: calc(100vh - 20upx);
+	}
+}

@@ -1,0 +1,7 @@
+.bgBox {
+	padding-top: 124upx;
+	&-wrapper {
+		@include fullImage;
+		width: 100%;
+	}
+}

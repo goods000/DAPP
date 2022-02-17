@@ -1,0 +1,19 @@
+.pages {
+}
+
+.main {
+	@include flexCenterColumn;
+	height: 100vh;
+	max-height: 100vh;
+	overflow: hidden;
+
+	& > * {
+		width: 100%;
+	}
+}
+
+/deep/ .menuBox {
+	&-wrapper {
+		background-image: url(@/static/backpack/img-footer-bg.jpg);
+	}
+}

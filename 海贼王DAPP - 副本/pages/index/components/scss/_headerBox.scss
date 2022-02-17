@@ -1,0 +1,41 @@
+.headerBox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 180upx;
+	z-index: 9;
+	
+	&-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-image: url(@/static/index/header/icon-header-bg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	
+	&-address {
+		position: absolute;
+		bottom: 19upx;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #ebd27b;
+		font-size: 26upx;
+		font-weight: normal;
+		font-family: 'HYZhengYuan';
+	}
+	
+	&-arrow{
+		position: absolute;
+		top: 36upx;
+		right: 30upx;
+		width: 40upx;
+		height: 24upx;
+		background-image: url(@/static/index/header/icon-arrow.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+}

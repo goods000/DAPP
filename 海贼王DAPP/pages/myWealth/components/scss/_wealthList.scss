@@ -1,0 +1,63 @@
+.wealthList{
+	width: 90%;
+	margin: auto;
+	&-wrapper{
+		
+	}
+	&-item{
+		@include flexCenterColumn;
+		margin: 36upx 0;
+		&__image{
+			image{
+				width: 37upx;
+				height: 42upx;
+			}
+		}
+		&__available{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #78593c;
+		}
+		&__en{
+			font-size: 24upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #ffffff;
+			background: #c8b89a;
+			padding: 10upx;
+			min-width: 460upx;
+			margin: 8upx 0 15upx;
+			white-space: nowrap;
+		}
+		&__num{
+			font-size: 38upx;
+			font-family: HYZhengYuan, HYZhengYuan-95S;
+			font-weight: 900;
+			text-align: center;
+			color: #78593c;
+			letter-spacing: 4upx;
+		}
+	}
+	&-btn{
+		@include flexBetween;
+		margin: 40upx auto;
+		width: 75%;
+		& > view{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			padding: 20upx 0;
+		}
+		&__style{
+			background-image: url(@/static/package/icon-popupBox-btn__style.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			color: #E3B696;
+			width: 100%;
+		}
+	}
+}

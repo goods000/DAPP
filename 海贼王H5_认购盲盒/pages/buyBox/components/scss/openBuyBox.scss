@@ -1,0 +1,306 @@
+.buyBox{
+	position: relative;
+	&-tabsBox{
+		@include flexBetween;
+		width: 45%;
+		margin: 10upx auto 50upx;
+		&--en{
+			width: 60%;
+		}
+		&__title{
+			font-size: 26upx;
+			font-family: HYZhengYuan, HYZhengYuan-65S;
+			font-weight: 600;
+			text-align: right;
+			color: #907f68;
+			position: relative;
+			padding: 10upx 0;
+			&--active{
+				color: #946210;
+				&::before{
+					content: '';
+					background: #946210;
+					border-radius: 2upx;
+					width: 50%;
+					height: 6upx;
+					position: absolute;
+					bottom: 0;
+					left: 0;right: 0;
+					margin: auto;
+				}
+			}
+		}
+	}
+	&-bg{
+		width: 100%;
+		&__image{
+			width: 100%;
+		}
+	}
+	&-address{
+		@include flexLeft;
+		position: absolute;
+		top: 62upx;
+		left: 18upx;
+		background: url(@/static/buyBox/img-bg__name.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		padding: 10upx 80upx 0upx 68upx;
+		// width: 454upx;
+		&__name{
+			@include initGradBg;
+			-webkit-background-clip:text;
+			-webkit-text-fill-color:transparent;
+			font-size: 28upx;
+			font-family: HYZhengYuan, HYZhengYuan-85S;
+			font-weight: 850;
+			text-align: left;
+			color: #B8350B;
+		}
+		&__lang{
+			margin: 0 10upx 0 31upx;
+		}
+		&__image{
+			width: 28upx;
+			height: 30upx;
+		}
+	}
+	&-wrapper{
+		background: url(@/static/buyBox/img-bg.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		margin-top: -150upx;
+	}
+	&-image{
+		width: 432upx;
+		height: 153upx;
+		margin: auto;
+		position: relative;
+		z-index: 2;
+		image{
+			width: 100%;
+		}
+	}
+	&-flow{
+		width: 100%;
+		margin: -20upx auto 0;
+		position: relative;
+		z-index: 1;
+		image{
+			width: 100%;
+		}
+	}
+}
+.selection{
+	&-image{
+		width: 432upx;
+		height: 153upx;
+		margin: auto;
+		image{
+			width: 100%;
+		}
+	}
+	&-box{
+		width: 100%;
+		position: relative;
+		z-index: 1;
+		margin-top: -80upx;
+		&__header{
+			width: 100%;
+			padding: 0 60upx;
+			image{
+				width: 100%;
+			}
+		}
+		&__item{
+			background: url(@/static/buyBox/icon-first-bg.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			padding: 16upx 20upx 100upx;
+		}
+	}
+}
+.popupBox{
+	&-titleTips{
+		@include flexLeft;
+		margin: 22upx 80upx;
+		&__bg{
+			background-image: url(@/static/buyBox/icon-mining-titleBg.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			font-size: 22upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: left;
+			color: #f0e1d2;
+			padding: 8upx 26upx;
+			white-space: nowrap;
+		}
+		&__line{
+			width: 100%;
+			display: block;
+			border-bottom: 1px dashed rgba(101,68,33,.5);
+		}
+	}
+}
+
+.openBuyBox{
+	@include flexLeft;
+	flex-wrap: wrap;
+	margin: 0 80upx;
+	&-image{
+		image{
+			// width: 59%;
+			width: 496upx;
+			height: 207upx;
+			margin: auto;
+		}
+		position: relative;
+		z-index: 2;
+	}
+	&-typeBox{
+		width: 100%;
+		// margin: 18upx 0;
+		display: inline-block;
+		&__item{
+			@include flexLeft;
+			padding: 14upx;
+			margin-top: 20upx;
+		}
+	}
+	&-record{
+		font-size: 26upx;
+		font-family: PingFang SC, PingFang SC-Bold;
+		font-weight: 700;
+		text-decoration: underline;
+		text-align: center;
+		color: #83422a;
+		letter-spacing: -1upx;
+		margin: 100upx auto;
+	}
+}
+
+.typeBox{
+	&-image{
+		image{
+			width: 242upx;
+			height: 242upx;
+		}
+	}
+	&-details{
+		margin-left: 17upx;
+		@include flexLeftColumn;
+		flex: 1;
+		&__nameZh{
+			@include textShadow(2);
+			 // text-shadow:
+			 //   0px -2px 0 #92704e,  
+			 //   0px -1px 0 #92704e,
+			 //   1px -2px 0 #92704e,
+			 //   1px -2px 0 #92704e,
+			 //   0px 3px 3px rgba(0,0,0,0.9);
+			font-size: 34upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #ffffff;
+			letter-spacing: 3upx;
+		}
+		&__nameEn{
+			background: rgba(200,184,154,0.37);
+			border-radius: 2upx;
+			font-size: 20upx;
+			text-align: center;
+			color: #ffffff;
+			letter-spacing: 2upx;
+			// margin: 10upx 0;
+			margin: 19upx 0 29upx;
+			padding: 6upx 22upx;
+			white-space: nowrap;
+		}
+		&__numBox{
+			@include flexLeft;
+			&-numtitle{
+				font-size: 26upx;
+				font-family: PingFang SC, PingFang SC-Medium;
+				font-weight: 500;
+				text-align: left;
+				color: #c1875f;
+				letter-spacing: -1upx;
+			}
+			&-num{
+				font-size: 34upx;
+				font-family: HYZhengYuan, HYZhengYuan-95S;
+				font-weight: 95S;
+				text-align: left;
+				color: #614120;
+				letter-spacing: -1upx;
+				@include flexLeft;
+				align-items: flex-end;
+			}
+			&-usdt{
+				font-size: 20upx;
+				font-family: PingFang SC, PingFang SC-Medium;
+				font-weight: 500;
+				text-align: left;
+				color: #614120;
+				letter-spacing: -1upx;
+			}
+		}
+		&__btnBox{
+			width: 100%;
+			@include flexBetween;
+			margin-top: 15upx;
+			& > view{
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				// text-align: center;
+				// width: 130upx;
+				width: 47%;
+				padding: 4upx 0;
+			}
+			&-tranfer{
+				background-image: url(@/static/package/icon-type-btn1.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				color: #93663b;
+			}
+			&-open{
+				background-image: url(@/static/package/icon-type-btn2.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				color: #e3b696;
+				text-align: center;
+				font-size: 26upx;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+.popupBox{
+	&-cardbg{
+		background-image: url(@/static/composite/icon-cardBg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		margin: auto;
+		padding: 50upx;
+	}
+	&-border{
+		background-image: url(@/static/package/icon-border-active.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		padding: 11upx;
+	}
+	&-cardItem{
+		image{
+			width: 168upx;
+			height: 237upx;
+		}
+	}
+	&-cardMargin{
+		margin: 40upx auto;
+	}
+	&-contentbg{
+		&__boxImage{
+			&-name{
+				&__num{
+					font-size: 34upx;
+					font-family: HYZhengYuan, HYZhengYuan-95S;
+					font-weight: 95S;
+					text-align: center;
+					color: #f0e1d2;
+					letter-spacing: -1upx;
+					text-shadow: initial;
+				}
+			}
+		}
+	}
+}

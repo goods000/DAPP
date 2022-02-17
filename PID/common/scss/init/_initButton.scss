@@ -1,0 +1,86 @@
+.initButton {
+	@include flexCenterColumn;
+	padding: 22upx 40upx 104upx;
+	
+	&--fixed{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 30upx;
+		
+		/* #ifdef H5 */
+		padding-bottom: 30upx!important;
+		/* #endif */
+		/* #ifdef APP-PLUS */
+		padding-bottom: calc(constant(safe-area-inset-bottom) + 30upx)!important;
+		padding-bottom: calc(env(safe-area-inset-bottom) + 30upx)!important;
+		/* #endif */
+	}
+	
+	&--absolute{
+		position: absolute;
+		bottom: 60upx;
+		left: 0;
+		width: 100%;
+		padding: 0 30upx;
+	}
+	
+	&-row{
+		@include flexCenter;
+		flex: 1;
+		width: 100%;
+	}
+	
+	&-btn {
+		@include flexCenter;
+		flex: 1;
+		padding: 20upx 0;
+		border-radius: 18upx;
+		font-size: 100%;
+		width: 100%;
+		color: #FFFFFF;
+		font-size: 30upx;
+		font-weight: bold;
+		
+		+ .initButton-btn{
+			margin-top: 30upx;
+			
+			.initButton-row &{
+				margin-top: 0;
+			}
+		}
+		
+		.initButton-row &{
+			margin-right: 30upx;
+			
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+		
+		&--disabled{
+			background: #ffffff;
+			border: 1px solid #ececec;
+			border-radius: 20upx;
+			box-shadow: 0upx 3upx 0upx 0upx #aaaaaa; 
+			color: #46D298;
+		}
+		
+		&--green {
+			background-color: $globalColor-green;
+			color: #ffffff;
+		}
+		
+		&--orange {
+			background-color: $globalColor-orange;
+			color: #ffffff;
+		}
+		
+
+		&--delete {
+			background-color: #d54141;
+			color: #ffffff;
+		}
+	}
+}

@@ -1,0 +1,126 @@
+.explain{
+	&-image{
+		&--cn{
+			width: 496upx;
+			height: 207upx;
+			margin: auto;
+		}
+		&--en{
+			width: 80%;
+			height: 207upx;
+			margin: 0 auto 40upx;
+		}
+		position: relative;
+		z-index: 2;
+	}
+	&-flow{
+		width: 100%;
+		margin: -20upx auto 0;
+		position: relative;
+		z-index: 1;
+		image{
+			width: 100%;
+		}
+	}
+	&-box{
+		margin: 80upx 29upx 0;
+		position: relative;
+		z-index: 2;
+	}
+	&-bg{
+		background: url('@/static/first/icon-first-ruleBg.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		padding: 100upx 62upx 121upx;
+		// &--en{
+		// 	background: url('@/static/first/icon-first-ruleBg-en.png');
+		// 	background-repeat: no-repeat;
+		// 	background-size: 100% 100%;
+		// }
+	} 
+	&-item{
+		position: relative;
+		// @include flexCenter;
+		// align-items: flex-start;
+		&__box{
+			@include flexLeftColumn;
+			&-title{
+				position: absolute;
+				top: -110upx;
+				right: 0;left: 0;
+				margin: auto;
+				&--cn{
+					width: 206upx;
+					height: 67upx;
+					margin: auto;
+				}
+				&--en{
+					width: 395upx;
+					height: 61upx;
+				}
+			}
+			&-content{
+				font-size: 26upx;
+				font-family: HYDaLiShuJ, HYDaLiShuJ-Regular;
+				font-weight: 400;
+				text-align: justifyLeft;
+				color: #8e7c66;
+				text-indent: 45upx;
+				// width: 230upx;
+				// height: 290upx;
+				// overflow: scroll;
+				word-break: break-all;
+			}
+			&__time{
+				font-size: 20upx;
+				font-family: HYDaLiShuJ, HYDaLiShuJ-Regular;
+				font-weight: 400;
+				text-align: center;
+				color: #5f503e;
+				line-height: 24upx;
+				position: absolute;
+				bottom: -10upx;
+				right: 0;
+			}
+		}
+		&__rightBox{
+			// @include flexCenter;
+			margin-top: 20upx;
+			&-content{
+				font-size: 20upx;
+				font-family: HYDaLiShuJ, HYDaLiShuJ-Regular;
+				font-weight: 400;
+				text-align: left;
+				color: #8e7c66;
+				line-height: 24upx;
+				margin-bottom: 10upx;
+				word-break: break-all;
+			}
+			&-carefulBox{
+				background: url('@/static/first/icon-first-ruleBg-border.png');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				padding: 10upx 16upx 26upx;
+				&__title{
+					font-size: 20upx;
+					font-family: HYDaLiShuJ, HYDaLiShuJ-Regular;
+					font-weight: 400;
+					text-align: center;
+					color: #8e7c66;
+					line-height: 24upx;
+					margin-bottom: 15upx;
+				}
+				&__content{
+					font-size: 19upx;
+					font-family: HYDaLiShuJ, HYDaLiShuJ-Regular;
+					font-weight: 400;
+					text-align: left;
+					color: #5f503e;
+					line-height: 24upx;
+					height: 100upx;
+					overflow: scroll;
+				}
+			}
+		}
+	}
+}

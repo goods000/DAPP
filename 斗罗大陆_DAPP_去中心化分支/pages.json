@@ -1,0 +1,110 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "斗罗英雄",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none",
+					"popGesture": false
+				}
+			}
+		},{
+			"path": "pages/firstPage/firstPage",
+			"style": {
+				"navigationBarTitleText": "ECD",
+				"bounce": "none",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/faction/faction",
+			"style": {
+				"navigationBarTitleText": "斗罗英雄 - 派系",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none",
+					"popGesture": false
+				}
+			}
+		},
+		{
+			"path": "pages/ranking/ranking",
+			"style": {
+				"navigationBarTitleText": "斗罗英雄 - 榜单",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none",
+					"popGesture": false
+				}
+			}
+		},
+		{
+			"path": "pages/backpack/backpack",
+			"style": {
+				"navigationBarTitleText": "斗罗英雄 - 背包",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none",
+					"popGesture": false
+				}
+			}
+		},
+		{
+			"path": "pages/shop/shop",
+			"style": {
+				"navigationBarTitleText": "斗罗英雄 - 商店",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none",
+					"popGesture": false
+				}
+			}
+		},
+		{
+			"path": "pages/mining/mining",
+			"style": {
+				"navigationBarTitleText": "斗罗英雄 - 挖矿",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none",
+					"popGesture": false
+				}
+			}
+		},
+		{
+			"path": "pages/market/market",
+			"style": {
+				"navigationBarTitleText": "斗罗英雄 - 集市",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none",
+					"popGesture": false
+				}
+			}
+		},
+		{
+			"path": "pages/synthesis/synthesis",
+			"style": {
+				"navigationBarTitleText": "斗罗英雄 - 合成",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none",
+					"popGesture": false
+				}
+			}
+		}
+    ]
+}
+   

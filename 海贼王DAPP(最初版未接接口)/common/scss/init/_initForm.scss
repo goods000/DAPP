@@ -1,0 +1,348 @@
+.initFormBox {
+	position: relative;
+	z-index: 1;
+
+	&-item {
+		margin-bottom: 30upx;
+		position: relative;
+
+		&__list {
+			@include flexLeft;
+			align-items: stretch;
+		}
+
+		&__label {
+			color: $globalColor-fontStyle;
+			font-size: 28upx;
+			font-weight: bold;
+		}
+
+		&__subLabel {
+			color: $globalColor-fontSubStyle;
+			font-size: 28upx;
+			font-weight: 300;
+			margin-bottom: 15upx;
+		}
+
+		&__zone {
+			font-size: 32upx;
+			font-weight: 300;
+			width: 140upx;
+			margin-right: 15upx;
+			background: url(@/static/public/icon-triangle-bottom-white.png) no-repeat;
+			background-position: calc(100% - 15upx) center;
+			background-size: 22upx 12upx;
+			color: $globalColor-themeStyle;
+		}
+
+		&__data {
+			color: $globalColor-themeStyle;
+			font-size: 28upx;
+			font-weight: 300;
+			word-break: break-all;
+		}
+
+		&__input {
+			@include flexLeft;
+			@include initTransition(0.4);
+			border-bottom: 1px solid;
+			border-color: $globalColor-inputBorderStyle;
+			position: relative;
+			padding: 30upx 0;
+			flex: 1;
+
+			&.showCloseBtn {
+				.initFormBox-item__fixedBox-btn--clear {
+					display: flex;
+				}
+			}
+
+			input {
+				color: $globalColor-fontStyle;
+				font-size: 32upx;
+				font-weight: 300;
+				flex: 1;
+			}
+		}
+
+		&__textarea {
+			background-color: #f0f0f0;
+			border: 1px solid #cccccc;
+			border-radius: 18upx;
+			padding: 30upx;
+
+			textarea {
+				color: $globalColor-fontStyle;
+				font-size: 32upx;
+				font-weight: 300;
+				width: 100%;
+				height: 300upx;
+				margin-bottom: 15upx;
+			}
+
+			&-max {
+				font-size: 28upx;
+				font-weight: 300;
+				color: $globalColor-fontStyle;
+				text-align: right;
+			}
+		}
+
+		&__placeholder {
+			color: $globalColor-placeholderStyle;
+			font-size: 32upx;
+			font-weight: 300;
+		}
+
+		&__fixedBox {
+			@include flexRight;
+
+			&-btn {
+				width: 60upx;
+				height: 100%;
+				z-index: 999;
+				@include flexCenter;
+
+				&--clear {
+					display: none;
+					image {
+						width: 40upx;
+						@include fullImage;
+					}
+				}
+
+				&--eye {
+					image {
+						width: 40upx;
+						@include fullImage;
+					}
+				}
+			}
+		}
+
+		&__type {
+			color: $globalColor-fontStyle;
+			font-size: 30upx;
+			font-weight: 300;
+			position: relative;
+
+			& ~ .initFormBox-item__btn {
+				padding-left: 20upx;
+
+				&::after {
+					content: '';
+					display: inline-block;
+					width: 2upx;
+					height: 32upx;
+					position: absolute;
+					left: -1upx;
+					top: 50%;
+					transform: translateY(-50%);
+					background-color: #cccccc;
+				}
+			}
+		}
+
+		&__note {
+			color: $globalColor-fontSubStyle;
+			margin-top: 8upx;
+			font-size: 24upx;
+			font-weight: 300;
+		}
+
+		&__tips {
+			color: $globalColor-themeStyle;
+			margin-top: 8upx;
+			font-size: 24upx;
+			font-weight: 300;
+		}
+
+		&__verify {
+			color: $globalColor-themeStyle;
+			font-size: 32upx;
+			font-weight: bold;
+		}
+
+		&__note {
+			color: #757f8d;
+			font-size: 24upx;
+			font-weight: 300;
+			margin-top: 15upx;
+		}
+		
+		&__btn{
+			width: 40upx;
+			height: 40upx;
+			
+			& ~ view{
+				margin-left: 30upx;
+			}
+			
+			&--arrow{
+				background-image: url(@/static/public/icon-triangle-bottom-white.png);
+				background-position: center center;
+				background-size: 22upx 12upx;
+				background-repeat: no-repeat;
+			}
+			
+			&--scan{
+				background-image: url(@/static/public/icon-scan-white.png);
+				background-position: center center;
+				background-size: 34upx 34upx;
+				background-repeat: no-repeat;
+			}
+		}
+		
+		&__scan {
+			@include fullImage;
+			width: 34upx;
+		}
+
+		&__unit {
+			color: $globalColor-fontStyle;
+			font-size: 30upx;
+			font-weight: 300;
+		}
+
+		&__code {
+			color: $globalColor-themeStyle;
+			font-size: 30upx;
+			font-weight: 300;
+			margin-left: 30upx;
+		}
+	}
+
+	&-info {
+		padding: 30upx 0;
+
+		&__list {
+			@include flexBetween;
+			margin-bottom: 15upx;
+
+			&-label {
+				color: $globalColor-fontStyle;
+				font-size: 28upx;
+				font-weight: bold;
+			}
+
+			&-data {
+				color: $globalColor-fontSubStyle;
+				font-weight: 300;
+				font-size: 24upx;
+			}
+		}
+	}
+
+	&-tips {
+		text-align: left;
+		padding: 30upx 0;
+
+		&__title {
+			color: $globalColor-fontStyle;
+			font-size: 32upx;
+			font-weight: 300;
+			margin-bottom: 15upx;
+			text-align: left;
+		}
+
+		&__list {
+			color: $globalColor-fontSubStyle;
+			font-size: 22upx;
+			font-weight: 300;
+		}
+	}
+
+	&-button {
+		margin-top: 90upx;
+		padding: 0;
+
+		&__btn {
+			@include initTransition(0.4);
+			padding: 30upx 0;
+			border-radius: 8upx;
+			font-size: 36upx;
+			text-align: center;
+			color: #000f11;
+			font-weight: bold;
+			background-color: $globalColor-themeStyle;
+		}
+	}
+
+	&-checkbox {
+		margin-top: 120upx;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		font-size: 24upx;
+		color: #999999;
+
+		.linkColor {
+			color: $globalColor-themeStyle;
+		}
+	}
+
+	&-rightButton {
+		color: #999999;
+		font-size: 24upx;
+		font-weight: 300;
+		text-align: right;
+		padding-top: 30upx;
+	}
+
+	&-textButton {
+		width: 100%;
+		text-align: center;
+		padding: 30upx;
+		color: $globalColor-themeStyle;
+		font-size: 24upx;
+	}
+
+	&-between {
+		@include flexBetween;
+		margin-top: 15upx;
+	}
+
+	&-cardPlane {
+		@include flexBetween;
+		margin-bottom: 30upx;
+
+		&__item {
+			@include initTransition(0.4);
+			flex: 1;
+			padding: 30upx;
+			border-radius: 20upx;
+			background-color: #f0f0f0;
+			border: 1px solid #cccccc;
+			margin-right: 30upx;
+			font-size: 28upx;
+			font-weight: 300;
+			color: $globalColor-fontStyle;
+
+			&--active {
+				background-color: $globalColor-themeStyle;
+				color: #ffffff;
+				border-color: $globalColor-themeStyle;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&-icon {
+				@include fullImage;
+				margin-bottom: 15upx;
+				width: 34upx;
+			}
+
+			&-label {
+				font-size: 28upx;
+				font-weight: bold;
+			}
+
+			&-desc {
+				font-size: 20upx;
+				font-weight: bold;
+			}
+		}
+	}
+}

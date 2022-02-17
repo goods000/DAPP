@@ -1,0 +1,226 @@
+.firstTop{
+	/* margin: 170upx 0px 0; */
+	position: absolute;
+	z-index: 5;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	/* top: 528upx; */
+	top: 0;
+	width: 100%;
+	padding-top: 528upx;
+}
+
+.main{
+	/* background: url(@/static/index/img-bg.png); */
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/* padding-bottom: 27vh; */
+	position: relative;
+}
+
+.header{
+	&-bg{
+		width: 100%;
+		&__image{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			z-index: 1;
+		}
+	}
+}
+.headerBox{
+	height: 856upx;
+	&-address{
+		@include flexLeft;
+		position: relative;
+		z-index: 3;
+		background: url(@/static/index/icon-address-bg.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 30upx;
+		top: 30upx;
+		padding: 35upx 15upx 12upx 64upx;
+		color: #FDD23C;
+		font-size: 26upx;
+		font-family: DINPro;
+		font-weight: 500;
+		color: #FDD23C;
+		&__image{
+			width: 25upx;
+			height: 12upx;
+			margin-left: 7upx;
+		}
+	}
+	&-titleBox{
+		@include flexCenterColumn;
+		position: relative;
+		z-index: 2;
+		padding-top: 589upx;
+		&__image{
+			width: 50%;
+			margin-bottom: 39upx;
+		}
+		&__title{
+			font-size: 24upx;
+			font-family: PingFang SC;
+			font-weight: 500;
+			color: #ECECEC;
+			margin-bottom: 12upx;
+			text-align: center;
+		}
+	}
+}
+
+.gangBox{
+	background: #43B5DA;
+	padding: 0upx 68upx;
+	&-imageTop{
+		width: 75%;
+		/* height: 100%; */
+		margin: auto;
+		position: relative;
+		z-index: 2;
+	}
+	&-height{
+		position: relative;
+		z-index: 1;
+		/* height: calc(100vh - 1124upx); */
+		background: #ADE1EF;
+		border-radius: 36upx;
+		margin-top: -30upx;
+		padding: 30upx 0 0upx;
+	}
+	&-list{
+		@include flexCenter;
+		flex-wrap: wrap;
+		padding: 54upx 0 0;
+		&__item{
+			/* width: 33.33%; */
+			width: 100%;
+			text-align: center;
+			&-image{
+				width: 35%;
+				margin: auto;
+			}
+			&-box{
+				background: url(@/static/index/icon-white-bg.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				padding: 20upx 0;
+				margin: 46upx 0 0;
+			}
+			&-title{
+				background: url(@/static/index/icon-box-bg.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				font-size: 32upx;
+				font-family: HYWenHei;
+				font-weight: bold;	
+				color: #FFFFFF;
+				/* -webkit-text-stroke: 2upx #3D3D3D; */
+				/* text-stroke: 2upx #3D3D3D; */
+				@include textShadow;
+				padding: 11upx 44upx;
+				display: inline-block;
+			}
+			&-price{
+				font-size: 32upx;
+				font-family: DINPro;
+				font-weight: bold;
+				color: #F16920;
+				margin: 10upx auto 10upx;
+			}
+			&-priceTitle{
+				font-size: 20upx;
+				font-family: HYWenHei;
+				font-weight: normal;
+				color: #999999;
+			}
+			&-numBox{
+				@include flexCenter;
+				margin: 32upx 0 20upx;
+				image{
+					width: 52upx;
+					height: 52upx;
+				}
+				&__num{
+					background: url(@/static/public/icon-num-bg.png);
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					font-size: 28upx;
+					font-family: Source Han Serif SC;
+					font-weight: bold;
+					color: #FFFFFF;
+					line-height: 52upx;
+					-webkit-text-stroke: 3upx #A95F17;
+					text-stroke: 3upx #A95F17;
+					padding: 2upx 0;
+					width: 230upx;
+					margin: 0 32upx;
+				}
+			}
+			&-stock{
+				font-size: 20upx;
+				font-family: HYWenHei;
+				font-weight: normal;
+				color: #999999;
+			}
+		}
+	}
+	&-btn{
+		margin: 56upx auto 15upx;
+		&__image{
+			width: 390upx;
+			height: 82upx;
+			margin: auto;
+		}
+	}
+	&-titleBox{
+		/* @include flexBetween; */
+		@include flexCenter;
+		width: 45%;
+		margin: auto;
+	}
+	&-titleTips{
+		font-size: 24upx;
+		font-family: HYWenHei;
+		font-weight: normal;
+		color: #FFEAEA;
+		text-shadow: 0px 1px 8px rgba(163, 32, 1, 0.73);
+		text-align: center;
+	}
+	&-tipsBox{
+		margin: 74upx auto 54upx;
+		display: inline-block;
+		&__tips{
+			@include flexCenter;
+			margin-bottom: 30upx;
+			&-title{
+				font-size: 32upx;
+				font-family: HYWenHei;
+				font-weight: normal;
+				color: #FFFFFF;
+				margin: 0 19upx;
+				white-space: nowrap;
+			}
+			image{
+				width: 224upx;
+				height: 24upx;
+			}
+		}
+		&__list{
+			@include flexLeftColumn;
+			&-content{
+				font-size: 24upx;
+				font-family: HYWenHei;
+				font-weight: normal;
+				color: #FFFFFF;
+				line-height: 42upx;
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.myPackage{
+	&-box{
+		overflow: hidden;
+		background-image: url(@/static/composite/package-bg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		padding: 36upx 55upx 77upx ;
+	}
+	&__height{
+		margin-top: 90upx;
+		height: calc(100vh - 630upx);
+		@media screen and (min-height: 800px) {
+		   height: calc(100vh - 690upx);
+		}
+	}
+	&-cardBox{
+		// @include flexLeft;
+	}
+	&-cardItem{
+		margin-right: 0;
+		margin-bottom: 0;
+		width: 100%;
+		&__num{
+			height: auto;
+		}
+	}
+}
+
+.myHero{
+	&-cardItem{
+		@include flexCenterColumn;
+		width: 31%;
+		margin-right: 3%;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+	}
+	&-recordTips{
+		font-size: 28upx;
+		font-family: PingFang SC, PingFang SC-Bold;
+		font-weight: 700;
+		text-align: right;
+		color: #c1875f;
+		margin: 0 auto 0;
+	}
+	&-btn{
+		background-image: url(@/static/composite/icon-hero-btnBg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		margin: 14upx auto 30upx;
+		padding: 5upx 0;
+		font-size: 20upx;
+		font-family: PingFang SC, PingFang SC-Heavy;
+		font-weight: 800;
+		text-align: center;
+		color: #93653b;
+		width: 128upx;
+	}
+}

@@ -1,0 +1,24 @@
+.incomeBtnBox {
+	position: fixed;
+	z-index: 5;
+	bottom: 160upx;
+	left: 30upx;
+	
+	&-wrapper {
+		@include flexLeft;
+	}
+	
+	&-icon {
+		@include fullImage;
+		width: 90upx;
+		margin-right: 8upx;
+	}
+	
+	&-data{
+		font-family: 'DINPro';
+		color: #e9ba51;
+		font-size: 28upx;
+		font-weight: bold;
+		text-shadow: -2upx -2upx 0 #702f00, 2upx -2upx 0 #702f00, -2upx 2upx 0 #702f00, 2upx 2upx 0 #702f00, 0px 4upx 4upx #702f00;
+	}
+}

@@ -1,0 +1,157 @@
+// 中间弹出模块样式
+.initPopup {
+	&-wrapper {
+		background-color: #FFFFFF;
+		border-radius: 34upx;
+		padding: 30upx;
+		width: 600upx;
+	}
+
+	&-title {
+		text-align: center;
+		color: #333333;
+		font-size: 36upx;
+		font-weight: bold;
+		margin-bottom: 30upx;
+	}
+
+	&-desc {
+		color: #999999;
+		font-size: 28upx;
+		font-weight: 300;
+		margin-bottom: 30upx;
+
+		&--style {
+			color: $globalColor-themeStyle;
+		}
+	}
+
+	&-msg {
+		color: $globalColor-fontStyle;
+		font-size: 28upx;
+		font-weight: 300;
+		margin-bottom: 30upx;
+	}
+
+	&-listBox {
+		width: 100%;
+		margin-bottom: 30upx;
+		
+		&__list {
+			@include flexBetween;
+			padding: 15upx 0;
+			
+			&-label {
+				color: #999999;
+				font-size: 28upx;
+				font-weight: 300;
+			}
+			
+			&-data {
+				color: $globalColor-fontStyle;
+				font-size: 28upx;
+				font-weight: 300;
+			}
+			
+			&-input {
+				@include flexLeft;
+				flex: 1;
+				padding: 30upx;
+				background-color: #f6f7fb;
+				border-radius: 14upx;
+				color: $globalColor-fontStyle;
+				border-bottom: 1px solid #FFFFFF;
+				font-size: 32upx;
+				font-weight: bold;
+				
+				input {
+					flex: 1;
+				}
+			}
+			
+			&-textarea{
+				// @include flexLeft;
+				width: 100%;
+				background-color: #f7f6fb;
+				padding: 30upx;
+				border-radius: 20upx;
+				flex: 1;
+				color: $globalColor-fontStyle;
+				height: 160upx;
+				
+				&--long{
+					height: 360upx;
+				}
+				
+				textarea {
+					height: calc(100% - 30upx);
+					width: 100%;
+					color: $globalColor-fontStyle;
+					font-size: 28upx;
+					font-weight: 300;
+				}
+			}
+			
+			&-max{
+				color: $globalColor-fontStyle;
+				font-size: 28upx;
+				font-weight: 300;
+				text-align: right;
+			}
+
+			&-placeholder {
+				color: #cccccc;
+				font-size: 32upx;
+				font-weight: bold;
+			}
+
+			&-verify {
+				color: $globalColor-themeStyle;
+				font-size: 28upx;
+				font-weight: bold;
+			}
+			
+			&-btn{
+				color: #35a889;
+				font-size: 32upx;
+				font-weight: bold;
+				text-decoration: underline;
+			}
+		}
+
+		&__note {
+			text-align: right;
+			color: #999999;
+			font-size: 26upx;
+		}
+	}
+
+	&-buttonBox {
+		@include flexCenter;
+		
+		&__btn {
+			@include flexCenter;
+			flex: 1;
+			color: #999999;
+			font-size: 32upx;
+			font-weight: bold;
+			padding: 15upx 0;
+			border-radius: 60upx;
+			margin-right: 30upx;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&--cancel {
+				background-color: #dbdbdb;
+				color: #ffffff;
+			}
+
+			&--confirm {
+				background-color: $globalColor-themeStyle;
+				color: #ffffff;
+			}
+		}
+	}
+}

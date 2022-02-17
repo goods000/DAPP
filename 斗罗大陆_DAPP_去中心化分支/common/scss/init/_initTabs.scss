@@ -1,0 +1,39 @@
+.initTabs{
+	&-wrapper{
+		@include flexCenter;
+	}
+	
+	&-item{
+		@include flexCenterColumn;
+		@include initTransition(0.4);
+		position: relative;
+		color: #8c6c44;
+		font-size: 32upx;
+		margin: 0 30upx;
+		width: 200upx;
+		
+		&::before, &::after{
+			content: '';
+			display: inline-block;
+			width: 170upx;
+			height: 12upx;
+			background-image: url(@/static/public/icon-tabs-decoration.png);
+			background-repeat: no-repeat;
+			background-size: 170upx 12upx;
+			background-position: center center;
+			opacity: 0;
+		}
+		
+		&::after{
+			transform: rotateX(180deg);
+		}
+		
+		&--active{
+			color: #54330a;
+			
+			&::before, &::after{
+				opacity: 1;
+			}
+		}
+	}
+}

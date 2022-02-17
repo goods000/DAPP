@@ -1,0 +1,152 @@
+.information{
+	&-headerBox{
+		background-image: url(@/static/team/icon-team-bg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		padding: 44upx 74upx;
+		margin:0 30upx 0;
+		@include flexLeft;
+		&__image{
+			width: 130upx;
+			height: 134upx;
+			margin-right: 22upx;
+			image{
+				width: 100%;
+			}
+		}
+		&__news{
+			@include flexLeftColumn;
+			flex: 1;
+			width: 100%;
+			position: relative;
+			&-name{
+				background: #61503c;
+				border-radius: 10upx;
+				box-shadow: 0upx 2upx 7upx 0upx #423628 inset; 
+				border: 3upx solid #382400;
+				font-size: 30upx;
+				font-family: HYZhengYuan, HYZhengYuan-65S;
+				font-weight: 65S;
+				text-align: left;
+				padding: 7upx 36upx 4upx;
+				// color: linear-gradient(0deg,#ffdd8b 0%, #ffecc3 100%);
+				// text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
+				// -webkit-text-stroke: 1px #FFECC3;
+				// color: #FFDD8B;
+				color: #FFECC3;
+				@include textShadow(2, #382400);
+				letter-spacing: -1upx;
+				position: relative;
+				width: 100%;
+				image{
+					position: absolute;
+					right: 19upx;
+					top: 8upx;
+					width: 36upx;
+					height: 38upx;
+				}
+			}
+			&-invite{
+				color: #F8C945;
+				@include textShadow(2, #382400);
+				font-size: 26upx;
+				font-family: HYZhengYuan, HYZhengYuan-65S;
+				font-weight: 65S;
+				text-align: left;
+				color: #f8c945;
+				position: absolute;
+				right: 24upx;
+				top: 10upx;
+			}
+			&-level{
+				font-size: 26upx;
+				font-family: HYZhengYuan, HYZhengYuan-65S;
+				font-weight: 65S;
+				text-align: left;
+				color: #ffffff;
+				@include textShadow(2, #382400);
+				margin: 8upx 0 6upx;
+				&__1{
+					font-size: 26upx;
+					font-family: HYZhengYuan, HYZhengYuan-65S;
+					font-weight: 65S;
+					text-align: left;
+					color: #EBCB87;
+					@include textShadow(2, #382400);
+				}
+			}
+			&-list{
+				font-size: 26upx;
+				font-family: HYZhengYuan, HYZhengYuan-65S;
+				font-weight: 65S;
+				text-align: left;
+				color: #ffffff;
+				@include textShadow(2, #382400);
+			}
+			&-btn{
+				background-image: url(@/static/package/icon-type-btn2.png);
+				background-position: center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				font-size: 26upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: center;
+				color: #e3b696;
+				padding: 10upx 0;
+				width: 154upx;
+				position: absolute;
+				right: 0upx;
+				bottom: 0upx;
+			}
+		}
+	}
+	&-itemBox{
+		background-image: url(@/static/team/icon-team-newsBg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		@include flexLeftColumn;
+		margin: -20upx 39upx 44upx;
+		padding: 63upx 45upx 25upx;
+		&__item{
+			@include flexBetween;
+			margin: 10upx 0;
+			width: 100%;
+			&-title{
+				@include flexLeft;
+				font-size: 26upx;
+				font-family: PingFang SC, PingFang SC-Medium;
+				font-weight: 500;
+				text-align: left;
+				color: #af9a7e;
+				image{
+					width: 16upx;
+					height: 24upx;
+					margin-left: 11upx;
+				}
+				&__see{
+					font-size: 28upx;
+					font-family: PingFang SC, PingFang SC-Medium;
+					font-weight: 500;
+					text-decoration: underline;
+					text-align: left;
+					color: #f8c945;
+					margin-left: 28upx;
+				}
+			}
+		}
+		&__transferBtn{
+			border-top: 2px dashed #6c5657;
+			padding: 16upx;
+			margin-top: 24upx;
+			width: 100%;
+			image{
+				width: 44upx;
+				height: 44upx;
+				margin: auto;
+			}
+		}
+	}
+}

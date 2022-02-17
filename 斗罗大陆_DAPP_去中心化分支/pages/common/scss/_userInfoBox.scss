@@ -1,0 +1,103 @@
+.userInfoBox {
+	position: fixed;
+	z-index: 12;
+	top: 30upx;
+	left: 30upx;
+
+	&-wrapper {
+		@include flexLeft;
+		position: relative;
+	}
+
+	&-avatar {
+		@include flexCenter;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&-content {
+		padding-left: 45upx;
+		padding-top: 15upx;
+	}
+
+	&-address {
+		@include flexLeft;
+		padding-left: 70upx;
+		margin-bottom: 8upx;
+		font-family: 'DINPro';
+		color: #fefefe;
+		font-size: 24upx;
+		font-weight: bold;
+		text-shadow: -2upx -2upx 0 #935808, 2upx -2upx 0 #935808, -2upx 2upx 0 #935808, 2upx 2upx 0 #935808, 0px 4upx 4upx #935808;
+	}
+
+	&-level {
+		position: absolute;
+		bottom: 0;
+		left: 60upx;
+		z-index: 1;
+
+		&__label {
+			font-family: 'DINPro';
+			color: #fdd176;
+			font-size: 28upx;
+			font-weight: 300;
+			transform: translateX(-50%);
+
+			text-shadow: -3upx -3upx 0 #8d6434, 3upx -3upx 0 #8d6434, -3upx 3upx 0 #8d6434, 3upx 3upx 0 #8d6434, 0px 4upx 4upx #8d6434;
+		}
+	}
+
+	&-attributes {
+		@include flexLeft;
+		padding-left: 60upx;
+
+		&__item {
+			@include flexLeft;
+			margin-right: 30upx;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&-icon {
+				margin-right: 10upx;
+			}
+
+			&-data {
+				font-family: 'DINPro';
+				color: #e9ba51;
+				font-size: 24upx;
+				font-weight: bold;
+				text-shadow: -2upx -2upx 0 #702f00, 2upx -2upx 0 #702f00, -2upx 2upx 0 #702f00, 2upx 2upx 0 #702f00, 0px 4upx 4upx #702f00;
+			}
+		}
+	}
+}
+
+.sprite {
+    background-image: url(@/static/common/userInfo/spritesheet.png);    
+	background-repeat: no-repeat;
+	background-size: 338upx 194upx;
+
+    &.sprite-icon-address-bg {
+        @include stitches-sprite(-5upx, -5upx, 328upx, 56upx);
+    }
+
+    &.sprite-icon-attributes-power {
+        @include stitches-sprite(-5upx, -71upx, 38upx, 38upx);
+    }
+
+    &.sprite-icon-attributes-using {
+        @include stitches-sprite(-53upx, -71upx, 42upx, 36upx);
+    }
+
+    &.sprite-icon-avatar-bg {
+        @include stitches-sprite(-105upx, -71upx, 118upx, 118upx);
+    }
+
+    &.sprite-icon-avatar-demo {
+        @include stitches-sprite(-233upx, -71upx, 82upx, 82upx);
+    }
+}

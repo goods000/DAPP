@@ -1,0 +1,64 @@
+.worldData{
+	width: 100%;
+	&-wrapper{
+		margin: 10upx 30upx;
+	}
+	&-item{
+		@include flexBetween;
+		width: 100%;
+		margin: 20upx 0;
+		&__name{
+			font-size: 26upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: left;
+			color: #885a3c;
+			padding-left: 40upx;
+			@for $i from 1 through 7 {
+			    &-#{$i} {
+					background-image: url(@/static/list/icon-worldData-0#{$i}.png);
+					background-position: left;
+					background-size: 31upx 30upx;
+					background-repeat: no-repeat;
+			    }
+			}
+		}
+		&__num{
+			font-size: 32upx;
+			font-family: PingFang SC, PingFang SC-Heavy;
+			font-weight: 800;
+			text-align: right;
+			color: #885a3c;
+		}
+	}
+	&-box{
+		background-image: url(@/static/list/icon-worldData-bg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		padding: 39upx 52upx;
+		margin: 14upx 0;
+		&__headerTitle{
+			// border: 3upx solid #92704e;
+			@include textShadow(2, #92704e);
+			font-size: 30upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #ffffff;
+			letter-spacing: 3upx;
+		}
+	}
+	&-btn{
+		background-image: url(@/static/package/icon-type-btn1.png);
+		background-position: center;
+		background-size: 100% 100%;
+		width: 214upx;
+		margin: 10upx auto;
+		padding: 17upx 0;
+		font-size: 28upx;
+		font-family: PingFang SC, PingFang SC-Bold;
+		font-weight: 700;
+		text-align: center;
+		color: #93663b;
+	}
+}

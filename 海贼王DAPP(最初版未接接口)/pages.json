@@ -1,0 +1,146 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "pages/firstPage/firstPage",
+		// 	"style": {
+		// 		"navigationBarTitleText": "ECD",
+		// 		"bounce": "none",
+		// 		"app-plus": {
+		// 			"titleNView": false
+		// 		}
+		// 	}
+		// },
+		{
+			"path": "pages/share/share",
+			"style": {
+				"navigationBarTitleText": "海贼王 --- 分享页",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},{
+			"path": "pages/share/teamChoose",
+			"style": {
+				"navigationBarTitleText": "海贼王 --- 派系选择",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "海贼王",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/team/team",
+			"style": {
+				"navigationBarTitleText": "海贼派系",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/package/package",
+			"style": {
+				"navigationBarTitleText": "海贼包裹",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/exchange/exchange",
+			"style": {
+				"navigationBarTitleText": "市场交易",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/shop/shop",
+			"style": {
+				"navigationBarTitleText": "海贼商店",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/composite/composite",
+			"style": {
+				"navigationBarTitleText": "英雄合成",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "海贼榜单",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mining/mining",
+			"style": {
+				"navigationBarTitleText": "集卡挖矿",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/myWealth/myWealth",
+			"style": {
+				"navigationBarTitleText": "我的财富",
+				"disableScroll":true,
+				"app-plus": {
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		}
+		// {
+		// 	"path": "pages/haizeiwang/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "斗罗链游",
+		// 		"disableScroll":true,
+		// 		"app-plus": {
+		// 			"titleNView": false,
+		// 			"bounce":"none"
+		// 		}
+		// 	}
+		// }
+    ]
+}
+   

@@ -1,0 +1,220 @@
+.factionalSelection{
+	// margin-top: -20upx;
+}
+
+.selection{
+	&-image{
+		width: 346upx;
+		margin: 64upx auto 0;
+		image{
+			width: 100%;
+		}
+	}
+	&-box{
+		// width: 100%;
+		margin: -40upx 29upx 0;
+		&__header{
+			width: 100%;
+			padding: 0 60upx;
+			image{
+				width: 100%;
+			}
+		}
+		&__item{
+			background: url(@/static/first/icon-first-bg.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			padding: 108upx 0upx 100upx;
+			// padding: 16upx 0upx 100upx;
+		}
+		&__height{
+			// height: calc(100vh - 2upx);
+			height: calc(100vh - 160upx);
+		}
+	}
+}
+
+.factional{
+	@include flexLeft;
+	flex-wrap: wrap;
+	margin: 0 auto 0upx;
+	// margin: 0 60upx;
+	// padding: 0 20upx;
+	&-box{
+		padding: 0;
+		margin: 0;
+		width: 30%;
+		position: relative;
+		margin-right: -40px;
+		&__item{
+			background: url(@/static/first/icon-first-boprder.png);
+			background-repeat: no-repeat;
+			background-size: 100% 22upx;
+			// margin: 0 60upx;
+			padding: 19upx 0 30upx;
+			&-box{
+				@include flexCenter;
+				// padding-bottom: 6upx;
+				padding-bottom: 3px;
+				padding-right: 30upx;
+				&--active{
+					background: url(@/static/first/icon-active.png);
+					background-repeat: no-repeat;
+					// background-size: 100% 100%;
+					background-size: 100upx 244upx;
+					// padding-bottom: 6upx;
+					padding-bottom: 3px;
+					padding-right: 30upx;
+					// background-position: bottom right 70upx;
+					// background-position: 19px 0px;
+					background-position: 38upx 0px;
+					@media screen and (width: 411px) and (height: 823px) {
+						background-position: 41upx 0px;
+					}
+					@media screen and (width: 414px) and (height: 736px) {
+						background-position: 40upx 0px;
+					}
+				}
+			&__name{
+					width: 92upx;
+					height: 240upx;
+					background: url(@/static/first/icon-first-name.png);
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					font-size: 26upx;
+					font-family: PingFang SC, PingFang SC-Medium;
+					font-weight: bold;
+					text-align: center;
+					color: #674825;
+					line-height: 92upx;
+					writing-mode: vertical-lr;/*从左向右 从右向左是 writing-mode: vertical-rl;*/
+					writing-mode: tb-lr;/*IE浏览器的从左向右 从右向左是 writing-mode: tb-rl；*/
+					&--active{
+						background: url(@/static/first/icon-first-name--active.png);
+						background-repeat: no-repeat;
+						background-size: 100% 100%;
+						color: #A15E38;
+					}
+				}
+			}
+			&-image{
+				width: 26upx;
+				height: 22upx;
+				position: absolute;
+				bottom: 10upx;
+				left: 0%;right:30upx;
+				margin: auto;
+			}
+		}
+	}
+}
+
+.subscription{
+	&-margin{
+		margin: 40upx 140upx 0;
+		padding-bottom: 30upx;
+	}
+	&-head{
+		width: 346upx;
+		// height: 104upx;
+		margin: -80upx auto 28upx;
+		text-align: center;
+		image{
+			width: 100%;
+		}
+	}
+	&-box{
+		background: url(@/static/first/icon-first-bottomBg.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		padding: 44upx 0;
+		margin: 80upx 0;
+		// margin: 0 108upx;
+		&__tipsName{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #99B1CF;
+			margin: 84upx 0 0;
+		}
+		&__name{
+			// @include textShadow(2, #92704E);
+			font-size: 44upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #ffffff;
+			letter-spacing: 4upx;
+			margin: 30upx auto;
+			white-space: nowrap;	
+		}
+		&__tips{
+			font-size: 26upx;
+			font-family: PingFang SC, PingFang SC-Medium;
+			font-weight: 500;
+			text-align: center;
+			color: #ADC6DD;
+			padding: 0 44upx;
+			width: 70%;
+			margin: auto;
+			line-height: 50upx;
+		}
+	}
+	&-data{
+		@include flexCenterColumn;
+		&__num{
+			font-size: 26upx;
+			font-family: PingFang SC, PingFang SC-Medium;
+			font-weight: 500;
+			text-align: center;
+			color: #C3DAE9;
+			letter-spacing: -1px;
+			margin: 8upx 0 0;
+		}
+	}
+	&-record{
+		font-size: 34upx;
+		font-family: PingFang SC, PingFang SC-Bold;
+		font-weight: 700;
+		text-decoration: underline;
+		text-align: center;
+		color: #ffffff;
+		letter-spacing: -1upx;
+		margin:50upx auto;
+	}
+}
+
+.popupBox-btn > view{
+	padding: 16upx 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+.shop{
+	&-goodsBox{
+		@include flexBetween;
+		&__btn{
+			width: 30upx;
+			height: 44upx;
+			image{
+				width: 100%;
+			}
+		}
+		&__item{
+			width: 344upx;
+			height: 346upx;
+			image{
+				width: 100%;
+				margin: auto;
+			}
+		}
+	}
+	&-data{
+		@include flexCenterColumn;
+		&__num{
+			font-size: 26upx;
+			font-family: PingFang SC, PingFang SC-Medium;
+			font-weight: 500;
+			text-align: center;
+			color: #C8B89A;
+			letter-spacing: -1px;
+			margin: 8upx 0 0;
+		}
+	}
+	&-details{
+		margin-left: 17upx;
+		@include flexLeftColumn;
+		flex: 1;
+		&__nameZh{
+			@include textShadow(2);
+			font-size: 34upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #ffffff;
+			letter-spacing: 3upx;
+			margin: auto;
+		}
+		&__nameEn{
+			background: #c8b89a;
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #ffffff;
+			letter-spacing: 3upx;
+			margin: 10upx auto;
+			// padding: 6upx 64upx;
+			padding: 6upx 0upx;
+			white-space: nowrap;
+			width: 420upx;
+		}
+		&__titleBox{
+			& > text {
+				font-size: 26upx;
+				font-family: PingFang SC, PingFang SC-Medium;
+				font-weight: 500;
+				text-align: justifyLeft;
+				letter-spacing: 3px;
+				word-break: break-all;
+			}
+			&-tips1{
+				color: #78593c;
+			}
+			&-tips2{
+				color: #999999;
+			}
+			&-tips3{
+				color: #B34AD5;
+			}
+			&-tips4{
+				color: #333333;
+			}
+		}
+	}
+}
+
+.popupBox{
+	&-cardTips{
+		font-size: 28upx;
+		font-family: HYZhengYuan, HYZhengYuan-65S;
+		font-weight: 65S;
+		text-align: center;
+		color: #93653b;
+		letter-spacing: -1upx;
+		margin: 20upx 0;
+	}
+	&-operate{
+		&__num{
+			font-size: 34upx;
+			font-family: HYZhengYuan, HYZhengYuan-95S;
+			font-weight: 95S;
+			text-align: center;
+			color: #703924;
+			letter-spacing: -1px;
+		}
+	}
+	&-btn{
+		margin: 48upx 0upx 0upx;
+		padding-bottom: 10upx;
+	}
+}

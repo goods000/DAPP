@@ -1,0 +1,37 @@
+.pages {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+.headerTop{
+	top: 80upx;
+}
+
+.initTabs{
+	&-control{
+		width: 95%;
+	}
+}
+
+.scroll{
+	&-height{
+		height: calc(100vh - 20upx);
+	}
+}
+
+.exchange{
+	&-bg{
+		background-image: url(@/static/exchange/icon-exchange-bg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 70vh;
+		width: 95%;
+		margin: 40upx auto;
+		padding: 20upx 0 80upx;
+	}
+	&-wrapper{
+		width: 95%;
+	}
+}

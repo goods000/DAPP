@@ -1,0 +1,208 @@
+.upgrade{
+	&-header{
+		padding:0 34upx;
+		margin-bottom: 40upx;
+		@include flexLeft;
+		&__image{
+			width: 120upx;
+			height: 120upx;
+			margin-right: 8upx;
+			image{
+				width: 100%;
+			}
+		}
+	}
+	&-box{
+		flex: 1;
+		@include flexLeftColumn;
+		&__item{
+			@include flexBetween;
+			width: 100%;
+			&-name{
+				font-size: 28upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: left;
+				color: #d39743;
+			}
+			&-dataBox{
+				@include flexRight;
+				&__num{
+					font-size: 28upx;
+					font-family: PingFang SC, PingFang SC-Heavy;
+					font-weight: 800;
+					text-align: left;
+					color: #fad74e;
+				}
+				image{
+					width: 52upx;
+					height: 52upx;
+				}
+			}
+			&-num{
+				font-size: 22upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				text-align: right;
+				color: #fbce51;
+				text{
+					color: #F0E1D2;
+				}
+			}
+			&-content{
+				margin: 18upx 0upx 11upx;
+				position: relative;
+				background: linear-gradient(0deg,#030404 0%, #1d2c27 49%, #030302 100%);
+				border: 2upx solid #303232;
+				border-radius: 30upx;
+				height: 18upx;
+				width: 100%;
+				&__chart {
+					width: 100%;
+					// height: 40upx;
+					height: 100%;
+					position: absolute;
+					right: 0;
+					top: 0;
+					z-index: 1;
+					@include flexLeft;
+					&-line {
+						height: 100%;
+						background: linear-gradient(0deg,#95601c 0%, #f0d692 53%, #9d8249 100%);
+						border-radius: 30upx;
+					}
+				}
+			}
+		}
+	}
+	&-levelBox{
+		@include flexBetween;
+		padding: 0 34upx;
+		width: 100%;
+		// overflow-x: scroll;
+		&__image{
+			// background: #F0F0F0;
+			// border: 1px solid #F0F0F0;
+			width: 82upx;
+			height: 82upx;
+			margin: 24upx 0upx 10upx 0upx;
+			background-image: url(@/static/mining/icon-mining-addBtn.png);
+			// background-image: url(@/static/mining/icon-mining-01.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			&-bg{
+				text-align: center;
+				width: 100%;
+				height: 100%;
+				background-size: 100% 100% !important;
+				background-repeat: no-repeat !important;
+				background-position: center center !important;
+			}
+			&-num{
+				font-size: 30upx;
+				font-family: HYZhengYuan, HYZhengYuan-95S;
+				font-weight: 95S;
+				text-align: center;
+				color: #ffffff;
+				letter-spacing: -1upx;
+				margin: 13upx 0;
+			}
+		}
+	}
+}
+
+.popupBox{
+	&-contentbg{
+		padding: 34upx 0 60upx;
+		background: linear-gradient(0deg,#030404 0%, #1d2c27 49%, #030302 100%);
+		border: 4upx solid #16211e;
+		border-radius: 18upx;
+	}
+	&-titleTips{
+		@include flexLeft;
+		margin: 22upx 40upx;
+		&__bg{
+			background-image: url(@/static/mining/icon-mining-titleBg.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			font-size: 22upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			text-align: left;
+			color: #f0e1d2;
+			padding: 8upx 26upx;
+			white-space: nowrap;
+		}
+		&__line{
+			width: 100%;
+			display: block;
+			border-bottom: 1px dashed #16211E;
+		}
+	}
+}
+
+.myPackage{
+	&__height{
+		// height: 50vh;
+		height: calc(100vh - 1260upx);
+		overflow: scroll;
+		// @media screen and (min-height: 800px) {
+		//    height: 60vh;
+		// }
+	}
+	&-cardBox{
+		@include flexLeft;
+		flex-wrap: wrap;
+		// max-height: 45vh;
+		// overflow: scroll;
+		// @media screen and (min-height: 800px) {
+		//    max-height: 54vh;
+		// }
+		padding: 20upx 34upx;
+	}
+	&-cardItem{
+		width: 31%;
+		margin-right: 3%;
+		// margin-right: 21upx;
+		margin-bottom: 28upx;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+		background-image: url(@/static/package/icon-border.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		&--active{
+			background-image: url(@/static/package/icon-border-active.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		position: relative;
+		padding: 10upx;
+		&__cardBox{
+			position: relative;
+			image{
+				width: 100%;
+			}
+		}
+		&--close{
+			position: absolute;
+			right: -14upx;
+			top: -20upx;
+			width: 36upx;
+			height: 36upx;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

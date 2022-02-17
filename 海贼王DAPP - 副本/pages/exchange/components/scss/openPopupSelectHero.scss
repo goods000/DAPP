@@ -1,0 +1,89 @@
+.myPackage{
+	&__height{
+		// height: 50vh;
+		height: calc(100vh - 900upx);
+		overflow: scroll;
+		// @media screen and (min-height: 800px) {
+		//    height: 60vh;
+		// }
+	}
+	&-cardBox{
+		@include flexLeft;
+		flex-wrap: wrap;
+		margin: 0 26upx;
+		// max-height: 45vh;
+		// overflow: scroll;
+		// @media screen and (min-height: 800px) {
+		//    max-height: 54vh;
+		// }
+	}
+	&-cardItem{
+		width: 31%;
+		margin-right: 3%;
+		// margin-right: 21upx;
+		margin-bottom: 28upx;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+		background-image: url(@/static/package/icon-border.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		&--active{
+			background-image: url(@/static/package/icon-border-active.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		position: relative;
+		padding: 10upx;
+		&__activeTitle{
+			position: absolute;
+			right: 10upx;
+			z-index: 2;
+			image{
+				width: 80upx;
+				height: 54upx;
+			}
+		}
+		&__cardBox{
+			position: relative;
+			image{
+				width: 100%;
+			}
+			&-info{
+				position: absolute;
+				right: 0;left: 0;
+				bottom: 18upx;
+				z-index: 2;
+				background-image: url(@/static/package/icon-num.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				@include flexCenter;
+				image{
+					width: 24upx;
+					height: 22upx;
+				}
+				&__num{
+					font-size: 20upx;
+					font-family: PingFang SC, PingFang SC-Medium;
+					font-weight: 500;
+					text-align: left;
+					color: #ffffff;
+				}
+			}
+		}
+		&__num{
+			background: #641A92;
+			border: 4upx solid #35261b;
+			border-radius: 50%;
+			font-size: 20upx;
+			font-family: HYZhengYuan, HYZhengYuan-65S;
+			text-align: center;
+			color: #ffffff;
+			// width: 107upx;
+			width: 120upx;
+			margin: -6upx auto 0;
+			position: relative;
+			z-index: 2;
+		}
+	}
+}

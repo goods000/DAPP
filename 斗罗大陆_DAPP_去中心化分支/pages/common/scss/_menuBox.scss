@@ -1,0 +1,54 @@
+.menuBox {
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+
+	&--hasHolder {
+		@include initBeforeGradHolder;
+	}
+
+	&--hasShadow {
+		box-shadow: 0 0 20upx 10upx #4d300b;
+	}
+
+	&-wrapper {
+		@include flexBetween;
+		padding: 0 30upx;
+		height: 160upx;
+		background-position: bottom center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+}
+
+.sprite {
+	background-image: url(@/static/common/menu/spritesheet.png);
+	background-repeat: no-repeat;
+	background-size: 360upx 220upx;
+
+	&.sprite-icon-btn-01 {
+		@include stitches-sprite(-5upx, -5upx, 110upx, 100upx);
+	}
+
+	&.sprite-icon-btn-02 {
+		@include stitches-sprite(-125upx, -5upx, 110upx, 100upx);
+	}
+
+	&.sprite-icon-btn-03 {
+		@include stitches-sprite(-5upx, -115upx, 110upx, 100upx);
+	}
+
+	&.sprite-icon-btn-04 {
+		@include stitches-sprite(-125upx, -115upx, 110upx, 100upx);
+	}
+
+	&.sprite-icon-btn-05 {
+		@include stitches-sprite(-245upx, -5upx, 110upx, 100upx);
+	}
+
+	&.sprite-icon-btn-06 {
+		@include stitches-sprite(-245upx, -115upx, 110upx, 100upx);
+	}
+}

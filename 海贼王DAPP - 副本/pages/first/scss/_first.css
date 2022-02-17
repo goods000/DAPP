@@ -1,0 +1,18 @@
+.firstTop{
+	/* margin: 170upx 0px 0; */
+	position: absolute;
+	z-index: 5;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	/* top: 528upx; */
+	top: 0;
+	width: 100%;
+	padding-top: 528upx;
+}
+
+.main{
+	background: url(@/static/first/img-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}

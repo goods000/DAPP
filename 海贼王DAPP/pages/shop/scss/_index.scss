@@ -1,0 +1,29 @@
+.pages {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background-image: url(@/static/shop/img-bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.initListBox{
+	&-bg{
+		// height: 72vh;
+		// padding: 60upx 0 106upx;
+		height: auto;
+		padding: 60upx 0 60upx;
+		margin: 40upx 0 0;
+	}
+	&-market{
+		position: relative;
+	}
+}
+
+.scroll{
+	&-height{
+		height: calc(100vh - 20upx);
+	}
+}
+.headerTop{
+	padding-bottom: 23%;
+}

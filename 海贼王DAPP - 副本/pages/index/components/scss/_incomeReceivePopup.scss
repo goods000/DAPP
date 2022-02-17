@@ -1,0 +1,132 @@
+.popupBox{
+	&-input{
+		background-image: url(@/static/package/icon-input-bg.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		// background: linear-gradient(0deg,#030404 0%, #1d2c27 49%, #030302 100%);
+		border-radius: 8upx;
+		margin: 27upx 48upx 0;
+		padding: 32upx;
+		input{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Medium;
+			font-weight: 500;
+			text-align: center;
+			color: #ffffff;
+		}
+		&__style{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Medium;
+			font-weight: 500;
+			text-align: center;
+			color: #ffffff;
+		}
+	}
+	&-contentbg{
+		&__info{
+			@include flexAround;
+		}
+		&__cardImage{
+			@include flexCenterColumn;
+			&--bg{
+				background-image: url(@/static/package/icon-transfer-add.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				padding: 12upx;
+				margin: 30upx 0 15upx;
+				position: relative;
+				display: inline-block;
+			}
+			&--border{
+				background-image: url(@/static/package/icon-border-active.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				padding: 12upx;
+				margin: 30upx 0 15upx;
+				position: relative;
+				display: inline-block;
+			}
+			&--close{
+				width: 36upx;
+				height: 36upx;
+				position: absolute;
+				right: -16upx;
+				top: -16upx;
+			}
+			&--card{
+				width: 168upx;
+				height: 237upx;
+			}
+		}
+		&__imageNum{
+			font-size: 34upx;
+			font-family: HYZhengYuan, HYZhengYuan-65S;
+			font-weight: 65S;
+			text-align: center;
+			color: #ffffff;
+			letter-spacing: -1upx;
+		}
+		&__imageTitle{
+			font-size: 23upx;
+			font-family: PingFang SC, PingFang SC-Medium;
+			font-weight: 500;
+			text-align: center;
+			color: #585246;
+			margin-top: 15upx;
+		}
+		&__item{
+			@include flexBetween;
+			margin: 20upx auto 0;
+			width: 90%;
+			&-title{
+				font-size: 24upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: left;
+				color: #c1875f;
+			}
+			&-info{
+				font-size: 24upx;
+				font-family: PingFang SC, PingFang SC-Heavy;
+				font-weight: 800;
+				text-align: right;
+				color: #F0E1D2;
+				&--active{
+					color: #f8c946;
+				}
+				&--line{
+					text-decoration: underline;
+				}
+			}
+		}
+		&__tips{
+			margin: 38upx auto 53upx;
+		}
+		&__boxImage{
+			&-title{
+				margin-top: 24upx;
+			}
+		}
+	}
+	&-btn{
+		& > view{
+			// width: 30%;
+			padding: 14upx 0;
+		}
+		// &--width{
+		// 	& > view {
+		// 		width: 100%;
+		// 		padding: 20upx 0;
+		// 	}
+		// }
+	}
+	&-recordTitle{
+		font-size: 26upx;
+		font-family: PingFang SC, PingFang SC-Medium;
+		font-weight: 500;
+		text-decoration: underline;
+		text-align: center;
+		color: #f8c945;
+		margin-bottom: 57upx;
+	}
+}

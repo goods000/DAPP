@@ -1,0 +1,214 @@
+.cardBox {
+	&-wrapper {
+		height: calc(100vh - 400upx - 160upx);
+		padding: 0 20upx;
+	}
+
+	&-plane {
+		@include flexLeft;
+		flex-wrap: wrap;
+		padding: 20upx 0;
+	}
+
+	&-item {
+		width: calc((100% - 40upx) / 4);
+		border-radius: 14upx;
+		margin: 5upx;
+		position: relative;
+
+		&--equipped {
+			&::after {
+				content: '';
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-image: url(@/static/mining/icon-status-equipped.png);
+				background-repeat: no-repeat;
+				background-position: top left;
+				background-size: 100upx 90upx;
+			}
+		}
+
+		&--locked {
+			&::after {
+				content: '';
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-image: url(@/static/mining/icon-status-locked.png);
+				background-repeat: no-repeat;
+				background-position: top left;
+				background-size: 100upx 90upx;
+			}
+		}
+
+		&__header {
+			position: relative;
+			overflow: hidden;
+			border: 6upx solid #54330a;
+			border-radius: 14upx;
+		}
+
+		&__card {
+			@include fullImage;
+			width: 100%;
+
+			.cardBox-item--grayscale & {
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				-ms-filter: grayscale(100%);
+				-o-filter: grayscale(100%);
+				filter: grayscale(1);
+				filter: gray;
+			}
+		}
+
+		&__gradBg {
+			@include flexLeft;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 40upx;
+			padding: 0 10upx;
+
+			&::before {
+				content: '';
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+
+			&--style1 {
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#717171+0,717171+100&0+0,1+75 */
+				background: -moz-linear-gradient(top, rgba(113, 113, 113, 0) 0%, rgba(113, 113, 113, 1) 75%, rgba(113, 113, 113, 1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(113, 113, 113, 0) 0%, rgba(113, 113, 113, 1) 75%, rgba(113, 113, 113, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(
+					to bottom,
+					rgba(113, 113, 113, 0) 0%,
+					rgba(113, 113, 113, 1) 75%,
+					rgba(113, 113, 113, 1) 100%
+				); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00717171', endColorstr='#717171',GradientType=0 ); /* IE6-9 */
+			}
+
+			&--style2 {
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9f39ce+0,9f39ce+100&0+0,1+75 */
+				background: -moz-linear-gradient(top, rgba(159, 57, 206, 0) 0%, rgba(159, 57, 206, 1) 75%, rgba(159, 57, 206, 1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(159, 57, 206, 0) 0%, rgba(159, 57, 206, 1) 75%, rgba(159, 57, 206, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(
+					to bottom,
+					rgba(159, 57, 206, 0) 0%,
+					rgba(159, 57, 206, 1) 75%,
+					rgba(159, 57, 206, 1) 100%
+				); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009f39ce', endColorstr='#9f39ce',GradientType=0 ); /* IE6-9 */
+			}
+
+			&--style3 {
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1a1916+0,1a1916+100&0+0,1+75 */
+				background: -moz-linear-gradient(top, rgba(26, 25, 22, 0) 0%, rgba(26, 25, 22, 1) 75%, rgba(26, 25, 22, 1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(26, 25, 22, 0) 0%, rgba(26, 25, 22, 1) 75%, rgba(26, 25, 22, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(
+					to bottom,
+					rgba(26, 25, 22, 0) 0%,
+					rgba(26, 25, 22, 1) 75%,
+					rgba(26, 25, 22, 1) 100%
+				); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001a1916', endColorstr='#1a1916',GradientType=0 ); /* IE6-9 */
+			}
+
+			&--style4 {
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e00406+0,e00406+100&0+0,1+75 */
+				background: -moz-linear-gradient(top, rgba(224, 4, 6, 0) 0%, rgba(224, 4, 6, 1) 75%, rgba(224, 4, 6, 1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(224, 4, 6, 0) 0%, rgba(224, 4, 6, 1) 75%, rgba(224, 4, 6, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(
+					to bottom,
+					rgba(224, 4, 6, 0) 0%,
+					rgba(224, 4, 6, 1) 75%,
+					rgba(224, 4, 6, 1) 100%
+				); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e00406', endColorstr='#e00406',GradientType=0 ); /* IE6-9 */
+			}
+
+			&--style5 {
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a28500+0,a28500+100&0+0,1+75 */
+				background: -moz-linear-gradient(top, rgba(162, 133, 0, 0) 0%, rgba(162, 133, 0, 1) 75%, rgba(162, 133, 0, 1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(162, 133, 0, 0) 0%, rgba(162, 133, 0, 1) 75%, rgba(162, 133, 0, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(
+					to bottom,
+					rgba(162, 133, 0, 0) 0%,
+					rgba(162, 133, 0, 1) 75%,
+					rgba(162, 133, 0, 1) 100%
+				); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a28500', endColorstr='#a28500',GradientType=0 ); /* IE6-9 */
+			}
+		}
+
+		&__btnText {
+			display: inline-block;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			color: #ffd88d;
+			font-size: 28upx;
+			text-shadow: 0 0 10upx #e49028, -0 -0 10upx #e49028;
+		}
+
+		&__locked {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 55upx;
+			height: 64upx;
+			transform: translate(-50%, -50%);
+			background-image: url(@/static/mining/icon-locked.png);
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 55upx 64upx;
+		}
+
+		&__power {
+			font-family: 'DINPro';
+			color: #ffffff;
+			font-size: 22upx;
+			font-weight: 300;
+
+			background-image: url(@/static/public/icon-attributes-power.png);
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 24upx 24upx;
+			padding-left: 30upx;
+		}
+
+		&__content {
+			// @include flexCenterColumn;
+		}
+
+		&__title {
+			@include flexCenter;
+			color: #ffd88d;
+			font-size: 28upx;
+			height: 58upx;
+			width: 100%;
+			background-image: url(@/static/mining/icon-name-decoration.png);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: 140upx 58upx;
+		}
+	}
+}
+
+.initTitle {
+	margin: 45upx 0;
+}

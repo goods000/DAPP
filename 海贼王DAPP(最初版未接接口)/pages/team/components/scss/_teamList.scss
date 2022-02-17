@@ -1,0 +1,121 @@
+.teamList{
+	&-wrapper{
+		
+	}
+	&-headerImage{
+		width: 100%;
+		padding: 0 31upx;
+		position: relative;
+		&__listHeader{
+			width: 414upx;
+			height: 94upx;
+			margin: auto;
+			position: relative;
+			z-index: 2;
+		}
+		&__listTop{
+			width: 90%;
+			margin: auto;
+			position: absolute;
+			top: 42upx;
+			left: 0;right: 0;
+			z-index: 1;
+		}
+	}
+	&-listBox{
+		
+	}
+}
+
+.listBox{
+	&__height{
+		height: calc(100vh - 1200upx);
+		min-height: 440upx;
+	}
+	&-wrapper{
+		background-image: url(@/static/team/icon-team-listBg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		margin: -40upx 17upx 0;
+		padding: 65upx 49upx;
+	}
+	&-header{
+		width: 100%;
+		@include flexLeft;
+		&__item{
+			font-size: 26upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: left;
+			color: #885a3c;
+			width: 18%;
+			&:nth-child(1){
+				width: 15%;
+			}
+			&:nth-child(2){
+				width: 32%;
+			}
+			&:nth-child(3){
+				width: 20%;
+				padding-left: 4%;
+			}
+			&:nth-child(4){
+				padding-left: 4%;
+			}
+			&:nth-last-child(1){
+				text-align: right;
+			}
+		}
+	}
+	&-itemBox{
+		width: 100%;
+		@include flexLeft;
+		&:nth-child(1){
+			background-image: url(@/static/team/1.png);
+			background-position: left;
+			background-size: 18upx 24upx;
+			background-repeat: no-repeat;
+		}
+		&:nth-child(2){
+			background-image: url(@/static/team/2.png);
+			background-position: left;
+			background-size: 18upx 24upx;
+			background-repeat: no-repeat;
+		}
+		&:nth-child(3){
+			background-image: url(@/static/team/3.png);
+			background-position: left;
+			background-size: 18upx 24upx;
+			background-repeat: no-repeat;
+		}
+		&__item{
+			font-size: 24upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: left;
+			color: #624023;
+			width: 18%;
+			border-bottom: 1px solid #b09d7e;
+			padding: 25upx 0;
+			&:nth-child(1){
+				width: 15%;
+			}
+			&:nth-child(2){
+				width: 32%;
+				// margin-right: 5%;
+				// display: inline-table;
+			}
+			&:nth-child(3){
+				width: 30%;
+				padding-left: 4%;
+			}
+			&:nth-last-child(1){
+				text-align: right;
+			}
+			&--active{
+				color: #BE5C1B;
+			}
+		}
+	}
+}

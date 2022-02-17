@@ -1,0 +1,78 @@
+.blindBox {
+	&-wrapper{
+		padding: 20upx;
+	}
+
+	&-plane {
+		@include flexLeft;
+		flex-wrap: wrap;
+	}
+	
+	&-item{
+		width: calc((100% - 60upx) / 3);
+		border-radius: 14upx;
+		margin: 10upx;
+		border: 1px solid #b09264;
+		background-color: rgba($color: #341f0c, $alpha: 0.6);
+		
+		&__header{
+			position: relative;
+			border-bottom-left-radius: 6upx;
+			border-bottom-right-radius: 6upx;
+			overflow: hidden;
+			padding: 20upx;
+		}
+		
+		&__card{
+			@include fullImage;
+			width: 100%;
+			margin: 0 auto;
+		}
+		
+		&__power{
+			font-family: 'DINPro';
+			color: #FFFFFF;
+			font-size: 22upx;
+			font-weight: 300;
+			
+			background-image: url(@/static/public/icon-attributes-power.png);
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 24upx 24upx;
+			padding-left: 30upx;
+		}
+		
+		&__content{
+			@include flexCenterColumn;
+			padding: 20upx;
+			position: relative;
+			
+			&::before{
+				content: '';
+				display: inline-block;
+				width: 80%;
+				height: 1px;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+				// margin: 15upx 0;
+				
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffd88d+0,ffd88d+50,ffd88d+100&0.05+0,1+50,0.05+100 */
+				background: -moz-linear-gradient(left,  rgba(255,216,141,0.05) 0%, rgba(255,216,141,1) 50%, rgba(255,216,141,0.05) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(255,216,141,0.05) 0%,rgba(255,216,141,1) 50%,rgba(255,216,141,0.05) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(255,216,141,0.05) 0%,rgba(255,216,141,1) 50%,rgba(255,216,141,0.05) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dffd88d', endColorstr='#0dffd88d',GradientType=1 ); /* IE6-9 */
+			}
+		}
+		
+		&__title{
+			color: #fca335;
+			font-size: 26upx;
+		}
+	}
+}
+
+.initTitle{
+	margin: 45upx 0;
+}

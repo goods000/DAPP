@@ -1,0 +1,64 @@
+.headerTop{
+	margin: 160upx 0upx 0;
+	position: absolute;
+	z-index: 5;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 180upx;
+	width: 100%;
+}
+
+.initTabs{
+	&-control {
+		@include flexAround;
+		width: 90%;
+		margin: auto;
+		&__item {
+			background-image: url(@/static/exchange/icon-excahnge.png);
+			background-position: center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #9a9a9a;
+			padding: 15upx 36upx;
+			&--active{
+				background-image: url(@/static/exchange/icon-excahnge-active.png);
+				background-position: center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				color: #94663B;
+			}
+		}
+	}
+	
+	&-records{
+		@include flexAround;
+		width: 100%;
+		margin: auto;
+		&__item {
+			font-size: 30upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 800;
+			text-align: center;
+			color: #b0976c;
+			padding: 20upx 52upx;
+			white-space: nowrap;
+			&--active{
+				background-image: url(@/static/exchange/icon-exchangeRecord--active.png);
+				background-position: center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				color: #885A3C;
+			}
+		}
+	}
+	
+	&-content{
+		@include initShadow;
+		border-radius: 15upx;
+		background-color: #FFFFFF;
+	}
+}

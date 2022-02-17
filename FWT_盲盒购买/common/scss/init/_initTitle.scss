@@ -1,0 +1,25 @@
+.initTitle {
+	&-wrapper {
+		@include flexBetween;
+	}
+
+	&-label {
+		color: $globalColor-fontStyle;
+		font-size: 32upx;
+		font-weight: bold;
+		background-image: url(@/static/public/icon-title-decorate.png);
+		background-repeat: no-repeat;
+		background-size: 19upx 34upx;
+		background-position: left center;
+		padding-left: 34upx;
+	}
+
+	&-more {
+		@include fullImage;
+		width: 30upx;
+		height: 30upx;
+		background: url(@/static/public/icon-more-style.png) no-repeat;
+		background-size: 30upx 30upx;
+		background-position: center center;
+	}
+}

@@ -1,0 +1,55 @@
+.initButton {
+	@include flexCenterColumn;
+	
+	&--fixed{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 30upx;
+		
+		/* #ifdef H5 */
+		padding-bottom: 30upx!important;
+		/* #endif */
+		/* #ifdef APP-PLUS */
+		padding-bottom: calc(constant(safe-area-inset-bottom) + 30upx)!important;
+		padding-bottom: calc(env(safe-area-inset-bottom) + 30upx)!important;
+		/* #endif */
+	}
+	
+	&--absolute{
+		position: absolute;
+		bottom: 60upx;
+		left: 0;
+		width: 100%;
+		padding: 0 30upx;
+	}
+	
+	&-row{
+		@include flexCenter;
+		flex: 1;
+		width: 100%;
+	}
+	
+	&-btn {
+		@include flexCenter;
+		height: 58upx;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center center;
+		
+		color: #fda435;
+		font-family: 'HYQiuShi';
+		font-size: 36upx;
+		
+		&--style1 {
+			width: 158upx;
+			background-image: url(@/static/public/icon-button-style1.png);
+		}
+		
+		&--style2 {
+			width: 226upx;
+			background-image: url(@/static/public/icon-button-style2.png);
+		}
+	}
+}

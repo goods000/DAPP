@@ -1,0 +1,127 @@
+.containerBox {
+	&-wrapper {
+		height: calc(100vh - 400upx);
+		padding: 30upx;
+		padding-bottom: 190upx;
+	}
+
+	&-plane {
+		width: 690upx;
+		height: 756upx;
+		background-image: url(@/static/public/icon-paper-bg.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding: 90upx 45upx;
+	}
+
+	&-title {
+		margin-bottom: 30upx;
+	}
+
+	&-tabsBox {
+		margin-bottom: 30upx;
+	}
+
+	&-buttonBox {
+		@include flexRight;
+	}
+}
+
+.tableBox {
+	&-theader{
+		padding: 0 15upx;
+		margin-bottom: 15upx;
+		padding-bottom: 15upx;
+		border-bottom: 1px solid #aa8a5b;
+	}
+	
+	&-tbody{
+		padding: 0 15upx;
+		height: 420upx;
+	}
+	
+	&-tr{
+		@include flexCenter;
+		margin-bottom: 15upx;
+		
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	&-th {
+		@include flexCenter;
+		// @include justifiedLayout;
+		flex: 1;
+		color: $globalColor-fontStyle;
+		font-family: 'HYQiuShi';
+		font-size: 28upx;
+		letter-spacing: 0;
+		
+		&--flex2{
+			flex: 2;
+		}
+		
+		&--flex3{
+			flex: 3;
+		}
+		
+		&--arrow{
+			background-image: url(@/static/public/icon-arrow-bottom.png);
+			background-size: 22upx 14upx;
+			background-repeat: no-repeat;
+			background-position: center right;
+			padding-right: 30upx;
+		}
+		
+		&:last-child{
+			justify-content: flex-end;
+		}
+		
+		&--ranking{
+			flex: 0 0 120upx
+		}
+	}
+
+	&-td {
+		@include flexCenter;
+		// @include justifiedLayout;
+		flex: 1;
+		color: $globalColor-fontStyle;
+		font-family: 'HYQiuShi';
+		font-size: 28upx;
+		letter-spacing: 0;
+		
+		&--flex2{
+			flex: 2;
+		}
+		
+		&--flex3{
+			flex: 3;
+		}
+		
+		&:last-child{
+			justify-content: flex-end;
+		}
+		
+		@for $i from 1 through 3 {
+			&--pic#{$i} {
+				background-image: url(@/static/ranking/icon-ranking-#{$i}.png);
+				background-size: 36upx 36upx;
+				background-position: calc(50% - 30upx) center;
+				background-repeat: no-repeat;
+			}
+		}
+		
+		&--ranking{
+			flex: 0 0 120upx
+		}
+	}
+	
+	&-icon{
+		@include fullImage;
+		width: 36upx;
+		margin-right: 8upx;
+	}
+}

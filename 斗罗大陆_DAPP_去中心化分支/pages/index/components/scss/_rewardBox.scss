@@ -1,0 +1,47 @@
+.rewardBox {
+	position: fixed;
+	z-index: 99;
+	bottom: 160upx;
+	left: 30upx;
+	
+	&-wrapper {
+		@include flexLeft;
+	}
+	
+	&-icon {
+	}
+	
+	&-data{
+		font-family: 'DINPro';
+		color: #e9ba51;
+		font-size: 28upx;
+		font-weight: bold;
+		text-shadow: -2upx -2upx 0 #702f00, 2upx -2upx 0 #702f00, -2upx 2upx 0 #702f00, 2upx 2upx 0 #702f00, 0px 4upx 4upx #702f00;
+	}
+}
+
+.sprite {
+    background-image: url(@/static/index/fixedBtn/spritesheet.png);
+	background-repeat: no-repeat;
+	background-size: 318upx 198upx;
+
+	&.sprite-icon-fixedBtn-backpack {
+		@include stitches-sprite(-5upx, -5upx, 96upx, 94upx);
+	}
+
+	&.sprite-icon-fixedBtn-notice {
+		@include stitches-sprite(-111upx, -5upx, 96upx, 88upx);
+	}
+
+	&.sprite-icon-fixedBtn-ranking {
+		@include stitches-sprite(-111upx, -103upx, 96upx, 88upx);
+	}
+
+	&.sprite-icon-fixedBtn-reward {
+		@include stitches-sprite(-217upx, -5upx, 86upx, 90upx);
+	}
+
+	&.sprite-icon-fixedBtn-setting {
+		@include stitches-sprite(-217upx, -105upx, 96upx, 88upx);
+	}
+}

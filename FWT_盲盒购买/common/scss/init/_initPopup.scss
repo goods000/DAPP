@@ -1,0 +1,205 @@
+.popupBox{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	&-languageBg{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		right: 0;
+		transform: translate(-50%,-50%);
+		width: 85%;
+		margin: auto;
+		width: 614upx;
+		height: 361upx;
+		border-radius: 36upx;
+		background: #FFFFFF;
+	}
+	&-languageContent{
+		margin: 100upx 50upx 0;
+		&__item{
+			@include flexBetween;
+			&-flex{
+				@include flexLeftColumn;
+			}
+		}
+		&__box{
+			@include flexCenter;
+			width: 40%;
+			margin: 28upx 0 0 0;
+			&--image{
+				width: 30upx;
+				height: 32upx;
+				margin-right: 26upx;
+			}
+			&--activeImage{
+				background-image: url(@/static/index/icon-noActive.png);
+				background-position: center;
+				background-size: 100% 100%;
+				margin-right: 24upx;
+				width: 32upx;
+				height: 32upx;
+				image{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&-title{
+				font-size: 28upx;
+				font-family: HYWenHei;
+				font-weight: normal;
+				color: #333333;
+				&--active{
+					color: #333333;
+				}
+			}
+		}
+	}
+	&-wrapper{
+		background-image: url(@/static/index/icon-open-bg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		right: 0;
+		transform: translate(-50%,-50%);
+		width: 85%;
+		margin: auto;
+		width: 614upx;
+		height: 730upx;
+		border-radius: 36upx;
+		// position: relative;
+	}
+	&-wrapperbg{
+		background: #FFFFFF;
+	}
+	&-btn{
+		@include flexBetween;
+		margin: 78upx 50upx 0upx;
+		padding: 0 0 120upx;
+		& > view{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			padding: 20upx 0;
+		}
+		&__zore1{
+			background-image: url(@/static/public/icon-copy.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			color: #2d3130;
+			width: 46%;
+		}
+	}
+	
+	&-header{
+		&__image{
+			width: 80%;
+			margin: -30upx auto 0;
+		}
+	}
+	
+	&-height{
+		height: 640upx;
+	}
+	
+	&-list{
+		// @include flexCenterColumn;
+		margin: 32upx;
+		&__item{
+			@include flexLeftColumn;
+			&-time{
+				font-size: 28upx;
+				font-family: HYWenHei;
+				font-weight: normal;
+				color: #333333;
+				margin-bottom: 20upx;
+			}
+			&-box{
+				// @include flexBetween;
+				@include flexLeft;
+				width: 100%;
+			}
+			&-line{
+				margin-bottom: 24upx;
+				padding-bottom: 24upx;
+				border-bottom: 1px solid #CCCCCC;
+			}
+		}
+	}
+	&-inviteBox{
+		@include flexCenterColumn;
+		&__title{
+			font-size: 24upx;
+			font-family: HYWenHei;
+			font-weight: normal;
+			color: #333333;
+		}
+		&__code{
+			width: 95%;
+			text-align: center;
+			font-size: 28upx;
+			font-family: DINPro;
+			font-weight: 400;
+			color: #1C659B;
+			margin: 40upx auto 30upx;
+			word-break: break-all;
+		}
+		&__image{
+			width: 30upx;
+			height: 30upx;
+		}
+	}
+	&-line{
+		background: rgba(204, 204, 204, 0);
+		border: 1px dashed #999999;
+		margin: 252upx 20upx 30upx;
+	}
+	&-close{
+		position: absolute;
+		bottom: 15%;
+		right: 0;left: 0;
+		&--marginB{
+			bottom: 28%;
+		}
+		image{
+			width: 32upx;
+			height: 32upx;
+			margin: auto;
+			text-align: center;
+		}
+	}
+}
+
+.numBox{
+	width: 100%;
+	&-item{
+		@include flexLeftColumn;
+		width: 33.33%;
+		&__title{
+			font-size: 24upx;
+			font-family: HYWenHei;
+			font-weight: normal;
+			color: #666666;
+			margin-bottom: 11upx;
+		}
+		&__num{
+			font-size: 28upx;
+			font-family: HYWenHei;
+			font-weight: normal;
+			color: #333333;
+			&--active{
+				color: #1C659B;
+			}
+		}
+		&:nth-last-child(1){
+			align-items: flex-end;
+		}
+		// &:nth-last-child(2){
+		// 	width: 25%;
+		// }
+	}
+}

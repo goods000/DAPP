@@ -1,0 +1,26 @@
+.filterBox {
+	margin: 30upx 0;
+	
+	&-wrapper {
+		padding: 0 90upx;
+	}
+
+	&-item {
+		text-align: left;
+		margin-bottom: 30upx;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&__label {
+			color: #54330a;
+			font-size: 28upx;
+			margin-bottom: 15upx;
+		}
+
+		&__checkBox {
+			@include flexLeft;
+		}
+	}
+}

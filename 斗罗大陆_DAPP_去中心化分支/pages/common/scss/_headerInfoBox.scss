@@ -1,0 +1,83 @@
+.headerInfoBox {
+	flex: 0 0 398upx;
+	height: 398upx;
+	z-index: 9;
+	
+	&-wrapper {
+		@include initGradHolder;
+		@include flexLeft;
+		position: relative;
+	}
+	
+	&-bg{
+		@include fullImage;
+		width: 100%;
+	}
+	
+	&-title{
+		@include fullImage;
+		position: absolute;
+		left: 30upx;
+		bottom: 30upx;
+		width: 226upx;
+		height: 200upx;
+		z-index: 2;
+	}
+	
+	&-publish{
+		@include fullImage;
+		width: 96upx;
+		position: absolute;
+		right: 30upx;
+		bottom: 120upx;
+	}
+	
+	&-tabs{
+		position: absolute;
+		right: 0;
+		bottom: 30upx;
+		z-index: 1;
+	}
+}
+
+/deep/ .tabsBox{
+	&-wrapper{
+		@include flexRight;
+	}
+	
+	&-item{
+		@include flexCenter;
+		background-size: 100% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-left: 15upx;
+		
+		color: $globalColor-fontStyle;
+		font-family: 'HYQiuShi';
+		font-size: 28upx;
+		
+		&--style1{
+			background-image: url(@/static/public/icon-tabs-style1.png);
+			width: 140upx;
+			height: 60upx;
+		
+			&.tabsBox-item--active{
+				background-image: url(@/static/public/icon-tabs-style1-active.png);
+			}
+		}
+		
+		&--style2{
+			background-image: url(@/static/public/icon-tabs-style2.png);
+			width: 176upx;
+			height: 62upx;
+		
+			&.tabsBox-item--active{
+				background-image: url(@/static/public/icon-tabs-style2-active.png);
+			}
+		}
+		
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+}

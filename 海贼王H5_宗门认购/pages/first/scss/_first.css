@@ -1,0 +1,60 @@
+.firstTop{
+	/* margin: 170upx 0px 0; */
+	position: absolute;
+	z-index: 5;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	/* top: 528upx; */
+	top: 0;
+	width: 100%;
+	padding-top: 528upx;
+}
+
+.main{
+	background: url(@/static/first/img-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/* padding-bottom: 27vh; */
+	position: relative;
+}
+
+.buyBox{
+	position: relative;
+	&-bg{
+		width: 100%;
+		&__image{
+			width: 100%;
+		}
+	}
+	&-address{
+		@include flexLeft;
+		position: absolute;
+		top: 60upx;
+		/* top: 120upx; */
+		left: 18upx;
+		background: url(@/static/buyBox/img-bg__name.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		padding: 10upx 80upx 0upx 68upx;
+		z-index: 8;
+		/* width: 454upx; */
+		&__name{
+			@include initGradBg;
+			-webkit-background-clip:text;
+			-webkit-text-fill-color:transparent;
+			font-size: 28upx;
+			font-family: HYZhengYuan, HYZhengYuan-85S;
+			font-weight: 850;
+			text-align: left;
+			color: #B8350B;
+		}
+		&__lang{
+			margin: 0 10upx 0 31upx;
+		}
+		&__image{
+			width: 28upx;
+			height: 30upx;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.menuBox{
+	@include flexRight;
+	&-wrapper{
+		@include initShadow(4,#b6925a);
+		background-color: #cfae72;
+		border: 2upx solid #7b4929;
+		border-radius: 10upx;
+		padding: 15upx;
+		transform: translate(-30upx, 120upx );
+	}
+	
+	&-item{
+		@include flexCenter;
+		padding: 8upx 0;
+		box-shadow: inset 1px 1px 4px 1px #b6925a, inset -1px -1px 4px 1px #b6925a;
+		color: #a6844e;
+		font-size: 30upx;
+		font-weight: normal;
+		width: 250upx;
+		border: 1px solid #dec18c;
+		margin-bottom: 5upx;
+		border-radius: 10upx;
+		
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}

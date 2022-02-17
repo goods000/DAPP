@@ -1,0 +1,199 @@
+.firstTop{
+	/* margin: 170upx 0px 0; */
+	position: absolute;
+	z-index: 5;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	/* top: 528upx; */
+	top: 0;
+	width: 100%;
+	padding-top: 528upx;
+}
+
+.main{
+	/* background: url(@/static/index/img-bg.png); */
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/* padding-bottom: 27vh; */
+	position: relative;
+}
+
+.header{
+	&-bg{
+		width: 100%;
+		&__image{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			z-index: 1;
+		}
+	}
+}
+.headerBox{
+	height: 856upx;
+	&-address{
+		@include flexLeft;
+		position: relative;
+		z-index: 3;
+		background: url(@/static/index/icon-address-bg.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		left: 30upx;
+		top: 30upx;
+		padding: 35upx 15upx 12upx 64upx;
+		color: #FDD23C;
+		font-size: 26upx;
+		font-family: DINPro;
+		font-weight: 500;
+		color: #FDD23C;
+		&__image{
+			width: 25upx;
+			height: 12upx;
+			margin-left: 7upx;
+		}
+	}
+	&-titleBox{
+		@include flexCenterColumn;
+		position: relative;
+		z-index: 2;
+		padding-top: 589upx;
+		&__image{
+			width: 50%;
+			margin-bottom: 39upx;
+		}
+		&__title{
+			font-size: 24upx;
+			font-family: PingFang SC;
+			font-weight: 500;
+			color: #ECECEC;
+			margin-bottom: 12upx;
+			text-align: center;
+		}
+	}
+}
+
+.gangBox{
+	background: #43B5DA;
+	padding: 0upx 68upx;
+	&-imageTop{
+		width: 75%;
+		/* height: 100%; */
+		margin: auto;
+		position: relative;
+		z-index: 2;
+	}
+	&-height{
+		position: relative;
+		z-index: 1;
+		/* height: calc(100vh - 1124upx); */
+		background: #ADE1EF;
+		border-radius: 36upx;
+		margin-top: -30upx;
+		padding: 30upx 0 0upx;
+	}
+	&-list{
+		@include flexLeft;
+		flex-wrap: wrap;
+		padding: 10upx 4%;
+		&__item{
+			/* width: 25%; */
+			width: 33.33%;
+			&--active{
+				background: #277D98;
+				border-radius: 10upx;
+			}
+			&-title{
+				/* width: 20%; */
+				padding: 10upx 13upx;
+				font-size: 28upx;
+				font-family: HYWenHei;
+				font-weight: normal;
+				color: #1C659B;
+				white-space: nowrap;
+				text-align: center;
+				&--active{
+					color: #FFFFFF;
+				}
+				&--success{
+					color: #5B98A8;
+				}
+			}
+			&-box{
+				background: url(@/static/index/icon-white-bg.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				padding: 54upx 0 39upx; 
+				margin: 46upx auto 0;
+			}
+			&-price{
+				font-size: 32upx;
+				font-family: DINPro;
+				font-weight: bold;
+				color: #F16920;
+				margin: 10upx auto 10upx;
+				text-align: center;
+			}
+			&-priceTitle{
+				font-size: 20upx;
+				font-family: HYWenHei;
+				font-weight: normal;
+				color: #999999;
+				text-align: center;
+			}
+		}
+	}
+	&-btn{
+		margin: 56upx auto 15upx;
+		&__image{
+			width: 390upx;
+			height: 82upx;
+			margin: auto;
+		}
+	}
+	&-titleBox{
+		@include flexBetween;
+		width: 45%;
+		margin: auto;
+	}
+	&-titleTips{
+		font-size: 24upx;
+		font-family: HYWenHei;
+		font-weight: normal;
+		color: #FFEAEA;
+		text-shadow: 0px 1px 8px rgba(163, 32, 1, 0.73);
+		text-align: center;
+	}
+	&-tipsBox{
+		margin: 74upx auto 54upx;
+		display: inline-block;
+		&__tips{
+			@include flexCenter;
+			margin-bottom: 30upx;
+			&-title{
+				font-size: 32upx;
+				font-family: HYWenHei;
+				font-weight: normal;
+				color: #FFFFFF;
+				margin: 0 19upx;
+				white-space: nowrap;
+			}
+			image{
+				width: 224upx;
+				height: 24upx;
+			}
+		}
+		&__list{
+			@include flexLeftColumn;
+			&-content{
+				font-size: 24upx;
+				font-family: HYWenHei;
+				font-weight: normal;
+				color: #FFFFFF;
+				line-height: 42upx;
+			}
+		}
+	}
+}

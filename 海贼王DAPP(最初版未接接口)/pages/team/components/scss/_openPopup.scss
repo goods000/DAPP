@@ -1,0 +1,54 @@
+.popupBox{
+	&-contentbg{
+		&__tipsContent{
+			text-align: center;
+			margin: 30upx 0;
+		}
+		&__tipsTitle{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Heavy;
+			font-weight: 800;
+			text-decoration: underline;
+			text-align: center;
+			color: #b3926a;
+			line-height: 36upx;
+		}
+		&__tipsName{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #b3926a;
+			letter-spacing: 3upx;
+			margin-bottom: 30upx;
+		}
+		&__tipsBox{
+			display: -webkit-box;
+			// @include flexLeft;
+			// align-items: flex-start;
+			margin-bottom: 21upx;
+		}
+		&__tipsType{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Heavy;
+			font-weight: 800;
+			text-align: left;
+			color: #b3926a;
+			line-height: 36upx;
+			margin-bottom: 21upx;
+		}
+		&__icon{
+			// width: 30upx;
+			width: 16upx;
+			height: 16upx;
+			border: 3upx solid #898D81;
+			background: #C0BF29;
+			border-radius: 50upx;
+			margin:16upx 10upx 0 0upx;
+			display: block;
+		}
+	}
+	&-contentBox{
+		padding: 51upx;
+	}
+}

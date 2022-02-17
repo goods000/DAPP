@@ -1,0 +1,20 @@
+.pages {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+.initListBox{
+	&-bg{
+		// height: 72vh;
+		// padding: 60upx 0 106upx;
+		height: auto;
+		padding: 60upx 0 60upx;
+		margin: 40upx 0 0;
+	}
+}
+
+.scroll{
+	&-height{
+		height: calc(100vh - 20upx);
+	}
+}

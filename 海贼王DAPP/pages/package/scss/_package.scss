@@ -1,0 +1,11 @@
+.pages {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+.scroll{
+	&-height{
+		height: calc(100vh - 20upx);
+	}
+}

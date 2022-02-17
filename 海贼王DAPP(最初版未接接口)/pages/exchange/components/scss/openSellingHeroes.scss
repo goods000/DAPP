@@ -1,0 +1,53 @@
+.popupBox{
+	&-chioceBox{
+		@include flexBetween;
+		margin: 0upx 48upx 0;
+	}
+	&-chioce{
+		// width: 25%;
+		margin: 0upx 0upx 20upx 0;
+		@include flexLeft;
+		label{
+			border-radius: 50%;
+			margin-right: 17upx;
+			width: 30upx;
+			height: 30upx;
+		}
+		&__box{
+			width: 30upx;
+			height: 30upx;
+			background: url(@/static/exchange/icon-noChioce.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			&--active{
+				background: url(@/static/exchange/icon-chioce.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+		}
+		&__title{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Medium;
+			font-weight: 500;
+			text-align: left;
+			color: #585246;
+			white-space: nowrap;
+			&--active{
+				color: #FFFFFF;
+			}
+		}
+		&__company{
+			font-weight: bold;
+			color: $globalColor-fontStyle;
+			font-size: 24upx;
+			margin-left: 10upx;
+		}
+	}
+	&-contentbg{
+		&__boxImage{
+			&-title{
+				margin-top: 30upx;
+			}
+		}
+	}
+}

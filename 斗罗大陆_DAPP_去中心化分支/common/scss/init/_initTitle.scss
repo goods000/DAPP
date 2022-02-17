@@ -1,0 +1,25 @@
+.initTitle {
+	@include flexCenter;
+	
+	&::before, &::after{
+		content: '';
+		display: inline-block;
+		width: 88upx;
+		height: 12upx;
+		background-image: url(@/static/public/icon-title-decoration.png);
+		background-repeat: no-repeat;
+		background-size: 88upx 12upx;
+		background-position: center center;
+	}
+	
+	&::after{
+		transform: rotateY(180deg);
+	}
+
+	&-label {
+		color: $globalColor-fontStyle;
+		font-family: 'HYQiuShi';
+		font-size: 32upx;
+		padding: 0 15upx;
+	}
+}

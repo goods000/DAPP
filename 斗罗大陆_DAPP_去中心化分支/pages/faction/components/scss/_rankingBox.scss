@@ -1,0 +1,78 @@
+.containerBox {
+	&-wrapper {
+		height: calc(100vh - 400upx);
+		padding: 30upx;
+		padding-bottom: 190upx;
+	}
+
+	&-plane {
+		width: 690upx;
+		height: 756upx;
+		background-image: url(@/static/public/icon-paper-bg.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding: 90upx 45upx;
+	}
+
+	&-title {
+		margin-bottom: 30upx;
+	}
+
+	&-listBox {
+		margin-bottom: 60upx;
+	}
+
+	&-buttonBox {
+		@include flexRight;
+	}
+}
+
+.tableBox {
+	&-theader{
+		padding: 0 15upx;
+		margin-bottom: 15upx;
+		padding-bottom: 15upx;
+		border-bottom: 1px solid #aa8a5b;
+	}
+	
+	&-tbody{
+		padding: 0 15upx;
+		height: 460upx;
+	}
+	
+	&-tr{
+		@include flexCenter;
+		margin-bottom: 15upx;
+		
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	&-th {
+		@include justifiedLayout;
+		flex: 1;
+		color: $globalColor-fontStyle;
+		font-family: 'HYQiuShi';
+		font-size: 28upx;
+		letter-spacing: 0;
+		
+		&--flex2{
+			flex: 2;
+		}
+	}
+
+	&-td {
+		@include justifiedLayout;
+		flex: 1;
+		color: $globalColor-fontStyle;
+		font-family: 'HYQiuShi';
+		font-size: 28upx;
+		letter-spacing: 0;
+		
+		&--flex2{
+			flex: 2;
+		}
+	}
+}

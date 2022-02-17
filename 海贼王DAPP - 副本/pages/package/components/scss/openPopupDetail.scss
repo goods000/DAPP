@@ -1,0 +1,112 @@
+.popupBox{
+	&-nameBg{
+		@include flexBetween;
+		flex-direction: Column;
+		background: linear-gradient(0deg,#030404 0%, #1d2c27 49%, #030302 100%);
+		border: 4upx solid #16211e;
+		border-radius: 18upx;
+		margin: 48upx;
+		padding: 34upx 0;
+	}
+	&-content{
+		@include flexBetween;
+		flex-direction: Column;
+		background-image: url(@/static/package/icon-card-bg.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		margin: 48upx;
+		padding: 34upx 0;
+		&__name{
+			font-size: 30upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			color: #ffffff;
+			margin-bottom: 28upx;
+		}
+		&__item{
+			// @include flexBetween;
+			@include flexCenter;
+			margin: 20upx auto 0;
+			width: 80%;
+			&-title{
+				font-size: 24upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: left;
+				color: #c1875f;
+				&--center{
+					text-align: center;
+					margin-bottom: 10upx;
+				}
+			}
+			&-info{
+				font-size: 24upx;
+				font-family: PingFang SC, PingFang SC-Heavy;
+				font-weight: 800;
+				text-align: right;
+				color: #F0E1D2;
+				@include flexLeft;
+				padding-right: 38upx;
+				position: relative;
+				white-space: nowrap;
+				&--active{
+					color: #f8c946;
+				}
+				image{
+					width: 14upx;
+					height: 20upx;
+					position: absolute;
+					right: 0;
+				}
+			}
+		}
+	}
+	&-card{
+		// @include flexLeft;
+		@include flexCenter;
+		padding: 3%;
+	}
+	&-cardBox{
+		position: relative;
+		// width: 33.33%;
+		width: 316upx;
+		// height: 436upx;
+		margin: 82upx 1.5% 30upx;
+		padding: 11upx;
+		background-image: url(@/static/package/icon-popupBox-border.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		&--grayscale {
+			-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			-ms-filter: grayscale(100%);
+			-o-filter: grayscale(100%);
+			filter: grayscale(1);
+			filter: brightness(0.5);
+		}
+		&__activeTitle{
+			position: absolute;
+			right: 10upx;
+			z-index: 2;
+			image{
+				width: 80upx;
+				height: 54upx;
+			}
+		}
+		&__image{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&-btn{
+		margin: 39px auto 0px;
+		& > view{
+			width: 29%;
+			padding: 16upx 0;
+		}
+		&__style{
+			width: 100% !important;
+		}
+	}
+}

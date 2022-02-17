@@ -1,0 +1,27 @@
+.initNoData{ 
+	font-size: 30upx;
+	font-family: PingFang SC, PingFang SC-Bold;
+	font-weight: 700;
+	color: #AAAAAA;
+	font-weight: 300;
+	text-align: center;
+	padding: 239upx 0;
+	
+	&::before{
+		content: '';
+		width: 100%;
+		height: 260upx;
+		display: inline-block;
+		background-image: url(@/static/public/icon-nodata.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 448upx 260upx;
+	}
+	&-noPadding{
+		padding: 60upx 0;
+		font-size: 30upx;
+		font-family: PingFang SC, PingFang SC-Bold;
+		font-weight: 700;
+		color: #AAAAAA;
+	}
+}

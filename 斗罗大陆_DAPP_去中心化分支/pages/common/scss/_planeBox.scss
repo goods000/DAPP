@@ -1,0 +1,10 @@
+.planeBox{
+	flex: 1;
+	
+	&-wrapper{
+		height: 100%;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+}

@@ -1,0 +1,49 @@
+.settingBox {
+	&-wrapper {
+		padding: 0 90upx;
+	}
+
+	&-item {
+		text-align: left;
+		margin-bottom: 30upx;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&__label {
+			color: #54330a;
+			font-size: 28upx;
+			margin-bottom: 15upx;
+		}
+
+		&__checkBox {
+			@include flexLeft;
+		}
+	}
+}
+
+.checkBox {
+	&-item {
+		@include flexLeft;
+		flex: 1;
+
+		&__check {
+			width: 40upx;
+			height: 32upx;
+			background-image: url(@/static/public/icon-checked.png);
+			background-position: center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			
+			&--active{
+				background-image: url(@/static/public/icon-checked-active.png);
+			}
+		}
+
+		&__label {
+			color: #54330a;
+			font-size: 28upx;
+		}
+	}
+}

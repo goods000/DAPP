@@ -1,0 +1,63 @@
+.pages {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+.headerTop{
+	margin-top: 380upx;
+}
+
+.scroll{
+	&-height{
+		height: calc(100vh - 20upx);
+	}
+}
+.listData{
+	margin-top: 31upx;
+	&-wrapper{
+		height: calc(100vh - 1200upx);
+		min-height: 640upx;
+		display: inline-block;
+		width: 100%;
+	}
+	&-headerImage{
+		width: 100%;
+		padding: 0 31upx;
+		position: relative;
+		&__listHeader{
+			width: 414upx;
+			height: 94upx;
+			margin: auto;
+			position: relative;
+			z-index: 2;
+		}
+		&__listTop{
+			width: 90%;
+			margin: auto;
+			position: absolute;
+			top: 42upx;
+			left: 0;right: 0;
+			z-index: 1;
+		}
+	}
+	&-listBox{
+		
+	}
+}
+
+.listBox{
+	&__height{
+		height: calc(100vh - 1200upx);
+		min-height: 640upx; 
+		display: inline-block;
+		width: 100%;
+	}
+	&-wrapper{
+		background-image: url(@/static/team/icon-team-listBg.png);
+		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		margin: -40upx 17upx 0;
+		padding: 65upx 49upx;
+	}
+}

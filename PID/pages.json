@@ -1,0 +1,83 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText": "PID",
+				"bounce": "none",
+				"app-plus": {
+					"titleNView": false,
+					"background": "#FFFFFF" 
+				}
+			}
+		},{
+			"path": "pages/vote/vote",
+			"style": {
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText": "PID - 投票",
+				"bounce": "none",
+				"app-plus": {
+					"titleNView": false,
+					"background": "#FFFFFF" 
+				}
+			}
+		},{
+			"path": "pages/vote/vote_details",
+			"style": {
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText": "PID - 投票详情",
+				"bounce": "none",
+				"app-plus": {
+					"titleNView": false,
+					"background": "#FFFFFF" 
+				}
+			}
+		},{
+			"path": "pages/IDO/IDO",
+			"style": { 
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText": "PID - 捐赠",
+				"bounce": "none",
+				"app-plus": {
+					"titleNView": false,
+					"background": "#FFFFFF" 
+				}
+			}
+		},{
+			"path": "pages/record/record",
+			"style": { 
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText": "PID - 节点奖励和个人奖励",
+				"bounce": "none",
+				"app-plus": {
+					"titleNView": false,
+					"background": "#FFFFFF" 
+				}
+			}
+		},{
+			"path": "pages/asset/asset",
+			"style": { 
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText": "PID - 用户资产",
+				"bounce": "none",
+				"app-plus": {
+					"titleNView": false,
+					"background": "#FFFFFF" 
+				}
+			}
+		}
+	],
+	"globalStyle":{
+	    "navigationBarTextStyle":"white",
+	    "navigationBarTitleText":"PID",
+	    "navigationBarBackgroundColor":"#FFFFFF",
+	    "backgroundColor":"#FFFFFF",
+	    "bounce":"none",
+	    "enablePullDownRefresh":false,
+	    "app-plus":{
+	        "titleNView":false,
+	        "background":"#FFFFFF"
+	    }
+	}
+}

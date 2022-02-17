@@ -1,0 +1,324 @@
+.blindPopupBox {
+	&-wrapper {
+		@include flexCenterColumn;
+		width: 750upx;
+		height: 100vh;
+		padding: 45upx 0;
+	}
+	
+	&-container{
+		width: 100%;
+		flex: 1;
+		padding: 0 30upx;
+	}
+	
+	&-close{
+		width: 60upx;
+		height: 48upx;
+		background-image: url(@/static/common/popup/icon-popup-close.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center center;
+		position: absolute;
+		right: 30upx;
+		top: 30upx;
+	}
+
+	&-title {
+		@include flexCenter;
+		margin-bottom: 60upx;
+
+		&::before,
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 88upx;
+			height: 12upx;
+			background-image: url(@/static/public/icon-title-decoration2.png);
+			background-repeat: no-repeat;
+			background-size: 88upx 12upx;
+			background-position: center center;
+		}
+
+		&::after {
+			transform: rotateY(180deg);
+		}
+
+		&__label {
+			color: #fda435;
+			font-family: 'HYQiuShi';
+			font-size: 36upx;
+			padding: 0 15upx;
+		}
+	}
+
+	&-successTitle {
+		@include flexCenter;
+		margin-bottom: 60upx;
+
+		&::before,
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 176upx;
+			height: 46upx;
+			background-image: url(@/static/public/icon-title-decoration3.png);
+			background-repeat: no-repeat;
+			background-size: 176upx 46upx;
+			background-position: center center;
+		}
+
+		&::after {
+			transform: rotateY(180deg);
+		}
+
+		&__label {
+			color: #ffd88d;
+			font-size: 56upx;
+			padding: 0 15upx;
+		}
+	}
+	
+	&-cardBox{
+		@include flexCenterColumn;
+		margin-bottom: 60upx;
+	}
+	
+	&-messageBox{
+		margin-bottom: 120upx;
+	}
+	
+	&-infoBox{
+		margin-bottom: 60upx;
+	}
+}
+
+.cardBox{
+	&-card {
+		@include fullImage;
+		width: 320upx;
+		margin-bottom: 30upx;
+	}
+	
+	&-name {
+		color: #fda435;
+		font-size: 36upx;
+	}
+	
+	&-length {
+		font-family: 'DINPro';
+		color: #ffffff;
+		font-size: 32upx;
+	}
+}
+
+.messageBox{
+	&-list{
+		text-align: center;
+		font-family: 'DINPro';
+		color: #FFFFFF;
+		font-size: 28upx;
+		padding: 8upx 0;
+		
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bcab79+0,bcab79+50,bcab79+100&0.05+0,1+50,0.05+100 */
+		background: -moz-linear-gradient(left,  rgba(188,171,121,0.05) 0%, rgba(188,171,121,1) 50%, rgba(188,171,121,0.05) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgba(188,171,121,0.05) 0%,rgba(188,171,121,1) 50%,rgba(188,171,121,0.05) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgba(188,171,121,0.05) 0%,rgba(188,171,121,1) 50%,rgba(188,171,121,0.05) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dbcab79', endColorstr='#0dbcab79',GradientType=1 ); /* IE6-9 */
+	}
+}
+
+.infoBox {
+	@include flexCenter;
+	&-wrapper {
+		width: 500upx;
+	}
+
+	&-list {
+		@include flexBetween;
+		margin-bottom: 30upx;
+
+		&--style1 {
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+
+		&__label {
+			color: #ffffff;
+			font-size: 28upx;
+			background-size: 36upx 36upx;
+			background-position: left center;
+			background-repeat: no-repeat;
+			padding-left: 42upx;
+			
+			&--power {
+				background-image: url(@/static/public/icon-attributes-power.png);
+			}
+			
+			&--experience {
+				background-image: url(@/static/public/icon-attributes-experience.png);
+			}
+		}
+
+		&__data {
+			font-family: 'DINPro';
+			color: #e9ba51;
+			font-size: 28upx;
+			font-weight: bold;
+			// -webkit-text-stroke: 2upx #702f00;
+			text-shadow: -2upx -2upx 0 #702f00, 2upx -2upx 0 #702f00, -2upx 2upx 0 #702f00, 2upx 2upx 0 #702f00, 0px 4upx 4upx #702f00;
+		}
+	}
+}
+
+.buttonBox{
+	@include flexCenter;
+	
+	&-btn{
+		@include flexCenter;
+		width: 224upx;
+		height: 82upx;
+		color: #54330a;
+		font-size: 36upx;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center center;
+		margin-right: 120upx;
+		
+		&:last-child{
+			margin-right: 0;
+		}
+		
+		&--style1 {
+			background-image: url(@/static/public/icon-button-style3.png);
+		}
+		
+		&--style2 {
+			background-image: url(@/static/public/icon-button-style4.png);
+		}
+	}
+}
+
+.calculateBox{
+	&-wrapper{
+		
+	}
+	
+	&-list{
+		@include flexCenter;
+		margin-bottom: 15upx;
+	}
+	
+	&-btn{
+		height: 50upx;
+		width: 50upx;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100% 100%;
+		
+		&--minus{
+			background-image: url(@/static/public/icon-calc-minus.png);
+		}
+		
+		&--plus{
+			background-image: url(@/static/public/icon-calc-plus.png);
+		}
+	}
+	
+	&-input{
+		@include flexCenter;
+		border: 1px solid #FFFFFF;
+		background-color: rgba($color: #a97a3c, $alpha: 0.8);
+		border-radius: 12upx;
+		width: 260upx;
+		margin: 0 15upx;
+		height: 68upx;
+		
+		input{
+			text-align: center;
+			flex: 1;
+			font-family: 'DINPro';
+			color: #e9ba51;
+			font-size: 32upx;
+			font-weight: bold;
+			text-shadow: -2upx -2upx 0 #702f00, 2upx -2upx 0 #702f00, -2upx 2upx 0 #702f00, 2upx 2upx 0 #702f00, 0px 4upx 4upx #702f00;
+		}
+	}
+	
+	&-placeholder{
+		color: #e9ba51;
+	}
+	
+	&-result{
+		color: #ffffff;
+		font-size: 24upx;
+		text-align: center;
+	}
+}
+
+.formBox{
+	width: 100%;
+	&-wrapper{
+		width: 100%;
+	}
+	
+	&-item{
+		margin-bottom: 30upx;
+		
+		&:last-child{
+			margin-bottom: 0;
+		}
+		
+		&__label{
+			color: #fda435;
+			font-size: 32upx;
+			margin-bottom: 8upx;
+		}
+		
+		&__input{
+			@include flexLeft;
+			padding: 30upx;
+			border: 1px solid #FFFFFF;
+			background-color: rgba($color: #a97a3c, $alpha: 0.8);
+			border-radius: 12upx;
+			
+			input{
+				flex: 1;
+				text-align: left;
+				flex: 1;
+				color: #e9ba51;
+				font-size: 32upx;
+			}
+		}
+		
+		&__placeholder{
+			color: #ae844d;
+			font-size: 32upx;
+		}
+	}
+}
+
+.cardListBox{
+	@include flexLeft;
+	flex-wrap: wrap;
+	
+	&-item{
+		@include flexCenterColumn;
+		width: 25%;
+		text-align: center;
+		
+		&__card{
+			@include fullImage;
+			width: 100upx;
+			margin-bottom: 15upx;
+		}
+		
+		&__name{
+			color: #fda435;
+			font-size: 28upx;
+		}
+	}
+}

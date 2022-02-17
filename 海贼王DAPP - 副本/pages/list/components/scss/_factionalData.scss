@@ -1,0 +1,60 @@
+.factionalData{
+	&-wrapper{
+		margin: 10upx 30upx;
+		@include flexLeft;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	&-item{
+		@include flexLeft;
+		align-items: flex-start;
+		width: 50%;
+		margin: 20upx 0 65upx;
+		@for $i from 1 through 6 {
+		    &-#{$i} {
+				background-image: url(@/static/list/icon-factionalData-0#{$i}.png);
+				background-position: left;
+				background-size: 28upx 28upx;
+				background-repeat: no-repeat;
+				width: 31upx;
+				height: 30upx;
+				margin: 5upx 11upx 0 0;
+		    }
+		}
+		&__box{
+			@include flexLeftColumn;
+		}
+		&__name{
+			font-size: 26upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: left;
+			color: #885a3c;
+		}
+		&__num{
+			font-size: 26upx;
+			font-family: PingFang SC, PingFang SC-Heavy;
+			font-weight: 800;
+			text-align: right;
+			color: #885a3c;
+			margin-top: 10upx;
+			&--bold{
+				font-size: 32upx;
+			}
+		}
+	}
+	
+	&-btn{
+		background-image: url(@/static/package/icon-popupBox-btn--style.png);
+		background-position: center;
+		background-size: 100% 100%;
+		width: 90%;
+		margin: 25upx auto 0;
+		padding: 17upx 0;
+		font-size: 30upx;
+		font-family: PingFang SC, PingFang SC-Bold;
+		font-weight: 700;
+		text-align: center;
+		color: #e3b696;
+	}
+}

@@ -1,0 +1,186 @@
+.market{
+	&-wrapper{
+		
+	}
+	&-operate{
+		@include flexBetween;
+		margin-bottom: 20upx;
+		&__item{
+			background-image: url(@/static/exchange/icon-exchange-bottom.png);
+			background-position: center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			@include flexCenter;
+			padding: 12upx 15upx;
+			&:nth-child(1){
+				margin-right: 30upx;
+			}
+			&-searchImage{
+				width: 28upx;
+				height: 28upx;
+				margin-right: 13upx;
+			}
+			&-input{
+				font-size: 24upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: left;
+				color: #f0e1d2;
+			}
+			input{
+				font-size: 24upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: left;
+				color: #f0e1d2;
+			}
+			&-title{
+				font-size: 24upx;
+				font-family: PingFang SC, PingFang SC-Heavy;
+				font-weight: 800;
+				text-align: right;
+				color: #f0e1d2;
+				white-space: nowrap;
+			}
+			&-sort{
+				width: 26upx;
+				height: 14upx;
+				margin-left: 11upx;
+			}
+		}
+	}
+	&-listBox{
+		&__header{
+			@include flexRight
+			border-bottom: 1px solid #b09d7e;
+			padding: 0 20upx 20upx;
+			margin-bottom: 6upx;
+			&-name{
+				font-size: 26upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: left;
+				color: #885a3c;
+				&:nth-child(1){
+					text-align: left;
+					flex: 1;
+				}
+				&:nth-child(2){
+					width: 124upx;
+					white-space: nowrap;
+					margin-right: 40upx;
+				}
+			}
+		}
+		&__height{
+			// height: 610upx;
+			// height: calc(100vh - 1100upx );
+			height: calc(100vh - 1100upx );
+			@media screen and (min-height: 800px) {
+			   height: calc(100vh - 1100upx );
+			}
+			@media screen and (max-height: 730px) {
+			   height: calc(100vh - 950upx );
+			}
+		}
+		&__heightTab{
+			// height: 670upx;
+			height: calc(100vh - 800upx );
+		}
+		&__item{
+			background-image: url(@/static/exchange/icon-exchange-border.png);
+			background-position: center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			padding: 32upx 27upx;
+			margin-top: 10upx;
+			@include flexBetween;
+			&-leftBox{
+				@include flexLeft;
+				image{
+					width: 70upx;
+					height: 70upx;
+					margin-right: 6upx;
+				}
+			}
+			&-box{
+				@include flexLeftColumn;
+				&__name{
+					font-size: 26upx;
+					font-family: PingFang SC, PingFang SC-Bold;
+					font-weight: 700;
+					text-align: left;
+					color: #ffffff;
+					letter-spacing: -1upx;
+				}
+				&__num{
+					font-size: 20upx;
+					text-align: left;
+					color: #ffffff;
+					letter-spacing: 0upx;
+					margin-top: 8upx;
+				}
+			}
+			&-centerBox{
+				@include flexCenterColumn;
+				image{
+					width: 37upx;
+					height: 42upx;
+				}
+				&__num{
+					font-size: 26upx;
+					font-family: PingFang SC, PingFang SC-Bold;
+					font-weight: 700;
+					text-align: left;
+					color: #ffffff;
+					letter-spacing: -1upx;
+					margin-top: 8upx;
+				}
+			}
+			&-btn{
+				width: 52upx;
+				background-image: url(@/static/exchange/icon-exchange-btn.png);
+				background-position: center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				font-size: 24upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: center;
+				color: #e3b696;
+				padding: 14upx;
+			}
+			&-cancel{
+				width: 52upx;
+				background-image: url(@/static/exchange/icon-exchange-cancel.png);
+				background-position: center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				font-size: 24upx;
+				font-family: PingFang SC, PingFang SC-Bold;
+				font-weight: 700;
+				text-align: center;
+				color: #93663B;
+				padding: 14upx;
+			}
+		}
+	}
+	&-btn{
+		@include flexBetween;
+		margin: 40upx 0upx;
+		& > view{
+			font-size: 28upx;
+			font-family: PingFang SC, PingFang SC-Bold;
+			font-weight: 700;
+			text-align: center;
+			padding: 20upx 0;
+		}
+		&__style{
+			background-image: url(@/static/package/icon-popupBox-btn__style.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			color: #E3B696;
+			width: 100%;
+		}
+	}
+}
